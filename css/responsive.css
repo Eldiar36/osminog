@@ -1,0 +1,432 @@
+@media (max-width: 1200px) {
+    header .nav ul li {
+        margin-right: 58px;
+    }
+    header .header-bottom .phone .phone-info a {
+        font-size: 15px;
+    }
+    header .logo-box {
+        margin-right: 18px;
+    }
+    header .logo-box p {
+        margin-left: 27px;
+        font-size: 15px;
+    }
+    header .license img:first-child {
+        width: 71px;
+    }
+    header .license {
+        width: 350px;
+    }
+    header .header-bottom .social img {
+        margin-right: 17px;
+    }
+    #about-bitrix .box-info {
+        height: 360px;
+        width: 100%;
+        padding: 25px 20px 25px 20px;
+    }
+    .member.founder {
+        margin-right: 134px;
+    }
+    .members .member .name{
+        font-size: 14px;
+    }
+    #home .left-box {
+        padding: 112px 0 112px 0;
+    }
+    .section-title {
+        font-size: 35px;
+    }
+    #application .application-form {
+        padding: 20px 25px 35px 25px;
+    }
+    .iframe-box {
+        width: 100%;
+        padding: 109px 0 134px 0;
+    }
+    .iframe-body {
+        width: 100%;
+    }
+    #owner .owner-info {
+        padding: 15px;
+    }
+    #owner .owner-body p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    #integration .box {
+        padding: 39px 140px 33px 38px;
+    }
+    #stages .box .section-title {
+        font-size: 25px;
+    }
+    #stages .title.title2{
+        font-size: 20px;
+    }
+    #integration .question {
+        font-size: 18px;
+    }
+    #tariffs .box-wrapper {
+        padding: 15px;
+    }
+    #tariffs .box-header h3 {
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 8px;
+    }
+    #tariffs .box-body {
+        padding: 20px 0 25px 0;
+    }
+    #tariffs .box-body p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #tariffs .box-footer .section-title {
+        font-size: 30px;
+    }
+    #support .box {
+        padding: 0 30px;
+    }
+    #support .button1 a {
+        font-size: 15px;
+    }
+    #support .button1 {
+        width: 320px;
+    }
+    #section-14 .left-box .section-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #section-14 .left-box p {
+        font-size: 16px;
+    }
+    #portfolio .section-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #portfolio .box {
+        padding: 5px 15px 25px 15px;
+    }
+    #answer .accordion p {
+        font-size: 23px;
+        line-height: 30px;
+        top: -12px;
+    }
+    #answer .asnwer-content {
+        height: 498px;
+    }
+    #answer .asnwer-content .box {
+        margin: 30px 0 35px 0;
+    }
+    #answer .asnwer-content .box p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 991px) {
+    header .nav {
+        display: none;
+    }
+    header .license {
+        width: 100%;
+    }
+    header .license img {
+        width: 140px!important;
+        height: 24px;
+        object-fit: cover;
+    }
+    header .header-bottom {
+        display: none;
+    }
+    header .mobile-menu{
+        display: flex;
+    }
+    header .header-bottom .phone {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    #home .left-box {
+        padding: 35px 0 60px 0;
+    }
+    #home .left-box .section-title {
+        margin-bottom: 35px;
+    }
+    #home .left-box .subtitle {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .button{
+        width: 380px;
+        height: 74px;
+    }
+    .members {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    #about-bitrix {
+        padding: 50px 0 80px 0;
+    }
+    #about-bitrix .box-info {
+        height: 100%;
+    }
+
+    #owner .owner-img:after {
+        right: 31px;
+        top: 33%;
+    }
+    #owner .owner-img:before {
+        top: 161px;
+        left: 0;
+    }
+    #owner .owner-img-wrapper {
+        height: 723px;
+    }
+
+    #owner .owner-img {
+        background-size: cover;
+        height: 100%;
+    }
+    #owner .owner-info {
+        margin-top: 30px;
+        padding: 45px;
+    }
+    #owner .owner-info-wrapper {
+        margin-top: -214px;
+    }
+    #owner .owner-info-wrapper:before {
+        left: 122px;
+        top: -31px;
+        transform: rotate(133deg);
+    }
+    #section-7 .task {
+        margin-bottom: 30px;
+    }
+    #integration .box {
+        margin-bottom: 30px;
+    }
+    #integration .question-box {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    #integration .question-box .question {
+        margin-bottom: 20px;
+    }
+    #tariffs .box-wrapper {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    #tariffs .box-body {
+        text-align: center;
+    }
+    #tariffs .box-footer button {
+        margin: 0 auto 20px auto;
+        display: block;
+        width: 320px;
+    }
+    .input1{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #month-free form {
+        flex-direction: column;
+        align-items: center;
+    }
+    #month-free .section-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #bitrix-programs .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+    }
+    #bitrix-programs .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+    }
+    #bitrix-programs .section-title {
+        margin-bottom: 50px;
+    }
+    #portfolio .section-title {
+        margin-bottom: 20px;
+    }
+    #portfolio .button{
+        margin: 30px 0;
+    }
+    #portfolio .after:after {
+        width: 197px;
+        height: 197px;
+        top: -42px;
+        right: -18%;
+        z-index: -1;
+    }
+    #reviews {
+        padding: 50px 0;
+    }
+    #reviews .iframe-box .iframe-body a {
+        margin-bottom: -32px;
+    }
+    #reviews .owl-carousel .owl-nav {
+        display: none;
+    }
+    #team .box img {
+        bottom: -64px;
+    }
+    #answer {
+        padding: 10px 0 100px 0;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+@media (max-width: 480px) {
+    .home-row {
+        flex-direction: column-reverse;
+    }
+    .members .member .name {
+        padding: 6px 5px;
+        line-height: 15px;
+
+    }
+    .button {
+        width: 100%;
+        height: 74px;
+    }
+    .section-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #home .right-box {
+        padding: 252px 0 177px 0;
+        height: 423px;
+    }
+    #home .right-box .whatsapp {
+        bottom: -17px;
+        width: 109px;
+        height: 24px;
+        font-size: 7px;
+        padding: 11px 7px 5px 3px;
+    }
+    .member.founder {
+        margin-top: -67px;
+    }
+    .member.developer {
+        margin-top: 20px;
+    }
+    #home .left-box .section-title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    #application .application-box {
+        height: 364px;
+    }
+    #application .application-box .img {
+        right: -104px;
+        top: 0;
+    }
+    #about-bitrix .box-info {
+        height: 360px;
+        width: 100%;
+        padding: 37px 38px 32px 38px;
+    }
+    .iframe-box {
+
+        height: 193px;
+        padding: 0;
+        z-index: 999;
+    }
+    #iframe-video .iframe-box:before {
+        width: 106px;
+        height: 106px;
+        left: -19%;
+        top: -49px;
+        z-index: -1;
+    }
+    #iframe-video .iframe-box:after {
+        width: 188px;
+        height: 188px;
+    }
+    #application .application-form {
+        border: none;
+    }
+    #owner .owner-img {
+        background-size: contain;
+    }
+    #owner .owner-info-wrapper:before {
+        left: 18px;
+        top: -31px;
+        transform: rotate(117deg);
+    }
+    #owner .owner-info {
+        margin-top: 30px;
+        padding: 45px 30px;
+    }
+    #tariffs .box-footer .button{
+        width: 240px;
+    }
+    #bitrix-programs {
+        padding: 58px 0 80px 0;
+    }
+    .white-popup-block {
+        padding: 30px 25px;
+    }
+    #base .section-title, #complex .section-title, #sales .section-title {
+        margin: 0 0 20px 0;
+    }
+    .white-popup-block .info-box p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .mfp-close-btn-in .mfp-close.type2 {
+        right: 0;
+        top: -55px;
+    }
+    .white-popup-block .info-box .info-box-title {
+        font-size: 17px;
+        line-height: 26px;
+        margin: 10px 0;
+    }
+    .white-popup-block .section-title {
+        font-size: 21px;
+    }
+    #answer .asnwer-content .box {
+        margin: 15px 0 15px 0;
+        padding: 25px 15px;
+    }
+    #answer .asnwer-content .box p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #answer .question .num {
+        font-size: 34px;
+        line-height: 28px;
+        margin-right: 10px;
+    }
+    #answer .accordion .num{
+        font-size: 18px;
+    }
+    #answer .accordion p {
+        font-size: 18px;
+    }
+    .accordion .ui-accordion-header-icon {
+        right: 0;
+        width: 9px;
+        height: 23px;
+    }
+    .accordion.ui-accordion-header-active .ui-accordion-header-icon {
+        right: 0;
+        width: 14px;
+        height: 23px;
+    }
+}
+@media (max-width: 320px) {
+
+}
