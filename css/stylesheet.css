@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-ExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-Black.otf');
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-Bold.otf');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-Light.otf');
+
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-Light.otf');
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-Bold.otf');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-Medium.otf');
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-ExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-Black.otf');
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardM-ThinItalic.otf');
+
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('../fonts/MazzardL-SemiBold.otf');
+
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('../fonts/MazzardH-ExtraBold.otf');
+
+    font-weight: 800;
+    font-style: normal;
+}
+

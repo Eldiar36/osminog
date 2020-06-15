@@ -1,12 +1,13 @@
 $(document).ready(function(){
     $(".stages-slider").owlCarousel({
         items: 1,
-        loop:true,
+        loop:false,
         nav:true,
         dots: false,
         margin:10,
         navText:false,
         animateIn: true,
+        autoHeight:true,
         responsive: {
             0: {
                 items:1,
@@ -40,7 +41,7 @@ $(document).ready(function(){
         navText:false,
         responsive: {
             0: {
-                items:1,
+                items:2,
                 dots: false
             },
             600: {
