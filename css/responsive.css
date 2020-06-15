@@ -311,7 +311,9 @@
     #owner .owner-img-wrapper {
         height: 723px;
     }
-
+    #owner .owner-img-wrapper .button-owner {
+        display: none;
+    }
     #owner .owner-img {
         background-size: cover;
         height: 100%;
@@ -319,6 +321,10 @@
     #owner .owner-info {
         margin-top: 30px;
         padding: 45px;
+    }
+    #owner .owner-info-wrapper .button-owner {
+        display: block;
+        margin:  30px auto 0 auto;
     }
     #owner .owner-info-wrapper {
         margin-top: -214px;
@@ -639,6 +645,26 @@
     #owner .owner-info {
         margin-top: 30px;
         padding: 45px 30px;
+    }
+    #owner .owner-img:before {
+        content: "";
+        width: 248px;
+        height: 248px;
+        background: url("../images/owner-mobile1.png")no-repeat;
+        background-size: contain;
+        top: 29%;
+    }
+    #owner .owner-img:after {
+        content: "";
+        width: 173px;
+        height: 173px;
+        background: url("../images/owner-mobile2.png")no-repeat;
+        background-size: contain;
+        right: 5px;
+        top: 41%;
+    }
+    #owner .owner-img-wrapper {
+        height: 600px;
     }
     #tariffs .box-body {
         text-align: left;

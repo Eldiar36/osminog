@@ -418,7 +418,8 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 .button-owner a {
     color: #ffffff;
-    margin-left: 70px;
+    margin-left: 89px;
+    font-size: 15px;
 }
 #home {
     padding-top: 12px;
@@ -834,21 +835,23 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 429px;
     height: 74px;
 }
-#owner .owner-img-wrapper .button a {
+#owner .owner-img-wrapper .button-owner a {
     position: relative;
 }
-#owner .owner-img-wrapper .button:after {
+#owner .owner-img-wrapper .button-owner:after {
     content: "";
-    background: url(../images/image6.png)no-repeat;
+    background: url("../images/image6.png")no-repeat;
     position: absolute;
-    right: -26px;
+    right: -25%;
     background-size: cover;
     width: 110px;
     z-index: 9999;
     height: 55px;
-    bottom: -47px;
+    bottom: -55px;
     cursor: initial;
-
+}
+#owner .owner-info .button-owner {
+    display: none;
 }
 #owner .owner-img {
     background: url("../images/andrey.png")no-repeat center;
