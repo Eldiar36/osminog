@@ -6,6 +6,7 @@ $(document).ready(function(){
         dots: false,
         margin:10,
         navText:false,
+        animateIn: true,
         responsive: {
             0: {
                 items:1,
@@ -129,7 +130,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
     $('.popup-block2').magnificPopup({
         type: 'inline',
-        fixedContentPos: true
+        fixedContentPos: true,
 
     });
 });
@@ -139,6 +140,5 @@ jQuery(document).ready(function($) {
     $( "#accordion" ).accordion({
          collapsible: true,
         active:1,
-     animated: 'bounceslide',
     });
 });

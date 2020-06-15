@@ -1,3 +1,21 @@
+@media (max-width: 1400px) {
+    #stages .owl-carousel .owl-nav button.owl-prev {
+        width: 65px;
+        position: absolute;
+        left: -4%;
+        top: 43%;
+        border-radius: 0;
+        height: 66px;
+    }
+    #stages .owl-carousel .owl-nav button.owl-next {
+        width: 65px;
+        position: absolute;
+        right: -4%;
+        top: 43%;
+        border-radius: 0;
+        height: 66px;
+    }
+}
 @media (max-width: 1200px) {
     header .nav ul li {
         margin-right: 58px;
@@ -124,8 +142,54 @@
         font-size: 20px;
         line-height: 40px;
     }
+    #stages .box .img svg.line{
+        width: 200px;
+    }
+    #stages .button1.first {
+        margin: 110px auto 0 auto;
+    }
+    #stages .items .section-subtitle {
+        font-size: 25px;
+
+    }
+    #stages .owl-carousel .owl-nav button.owl-prev {
+        width: 65px;
+        position: absolute;
+        left: -2%;
+        top: 43%;
+        border-radius: 0;
+        height: 66px;
+    }
+    #stages .owl-carousel .owl-nav button.owl-next {
+        width: 65px;
+        position: absolute;
+        right: -2%;
+        top: 43%;
+        border-radius: 0;
+        height: 66px;
+    }
+    #stages .row {
+        justify-content: center;
+
+    }
 }
 @media (max-width: 991px) {
+    #home,
+    #bitrix-need,
+    #section-7,
+    #iframe-video,
+    #owner,
+    #bitrix-programs,
+    #support,
+    #integration,
+    #portfolio,
+    #answer,
+    #team,
+    #tariffs,
+    #application,
+    #about-bitrix {
+        padding: 30px 0;
+    }
     header .nav {
         display: none;
     }
@@ -158,6 +222,60 @@
     #home .left-box .subtitle {
         margin-bottom: 20px;
         font-size: 18px;
+    }
+    #bitrix-need .main-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    #bitrix-need .main-box .box1,
+    #bitrix-need .main-box .box2,
+    #bitrix-need .main-box .box3,
+    #bitrix-need .main-box .box4,
+    #bitrix-need .main-box .box5,
+    #bitrix-need .main-box .box6 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 45%;
+        margin: 0 7px;
+    }
+    #bitrix-need .section-title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    #bitrix-need .box:after {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #bitrix-need .box1 .box,
+    #bitrix-need .box2 .box,
+    #bitrix-need .box3 .box,
+    #bitrix-need .box4 .box,
+    #bitrix-need .box5 .box,
+    #bitrix-need .box6 .box {
+        width: 100%;
+        height: 152px;
+        margin-bottom: 30px;
+    }
+    #bitrix-need .box1 .box:after,
+    #bitrix-need .box2 .box:after,
+    #bitrix-need .box3 .box:after,
+    #bitrix-need .box4 .box:after,
+    #bitrix-need .box5 .box:after,
+    #bitrix-need .box6 .box:after {
+        top: -100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    #bitrix-need .main-box img{
+        display: none;
     }
     .button{
         width: 380px;
@@ -234,6 +352,47 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    #stages .stage .box {
+        display: none;
+    }
+    #stages .box.active .title {
+        display: none;
+    }
+    #stages .items .section-title {
+        margin: 23px 0 20px 0!important;
+
+    }
+    #stages .items .section-subtitle {
+        font-size: 22px;
+        text-align: center;
+    }
+    #stages .box .section-title {
+       color: #000000;
+    }
+    #stages .button1.first {
+        margin: 30px auto 0 auto;
+    }
+    #stages .description-box {
+        display: none;
+    }
+    #stages .owl-carousel .owl-nav button.owl-next{
+         top: 20%;
+     }
+    #stages .owl-carousel .owl-nav button.owl-prev{
+        top: 20%;
+    }
+    #stages .items-box {
+        text-align: center;
+    }
+    #stages .items-box img {
+        width: 200px;
+        margin: 10px auto 0 auto;
+    }
+    #stages .info-box {
+        position: relative;
+        margin-bottom: 30px;
+        text-align: center;
+    }
     #month-free form {
         flex-direction: column;
         align-items: center;
@@ -279,12 +438,54 @@
     #answer {
         padding: 10px 0 100px 0;
     }
+    #answer .accordion p {
+        width: 72%;
+    }
+    .input-form {
+        width: 100%;
+    }
+    .white-popup-block .section-title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    #test .js-main-form {
+        margin-top: 35px;
+    }
+    .mfp-close-btn-in .mfp-close.type2 {
+        right: 0;
+        top: -50px;
+    }
+    #portfolio .box {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 767px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
+    #bitrix-need {
+        padding: 20px 0 0 0;
+    }
+    #bitrix-need .main-box .box {
+        padding: 25px 5px 10px 15px;
+    }
+    #bitrix-need .main-box .box h5 {
+        font-size: 17px;
+        margin-bottom: 5px;
+        line-height: 20px;
+    }
+    #bitrix-need .main-box .box p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    #application {
+        padding: 0 0 20px 0;
+    }
+    #iframe-video .section-subtitle {
+        margin: 36px 0 86px 0;
+    }
+
 }
 @media (max-width: 480px) {
     .home-row {
@@ -294,6 +495,22 @@
         padding: 6px 5px;
         line-height: 15px;
 
+    }
+    #bitrix-need .box1 .box,
+    #bitrix-need .box2 .box,
+    #bitrix-need .box3 .box,
+    #bitrix-need .box4 .box,
+    #bitrix-need .box5 .box,
+    #bitrix-need .box6 .box {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+    #bitrix-need .main-box .box h5 {
+        font-size: 16px;
+    }
+    #bitrix-need .main-box .box p {
+        font-size: 14px;
     }
     .button {
         width: 100%;
@@ -333,7 +550,7 @@
         top: 0;
     }
     #about-bitrix .box-info {
-        height: 360px;
+        height: 390px;
         width: 100%;
         padding: 37px 38px 32px 38px;
     }
@@ -354,6 +571,7 @@
         width: 188px;
         height: 188px;
     }
+
     #application .application-form {
         border: none;
     }
@@ -369,6 +587,20 @@
         margin-top: 30px;
         padding: 45px 30px;
     }
+    #tariffs .box-body {
+        text-align: left;
+    }
+    #section-7 .task {
+        padding: 34px 26px;
+        height: auto;
+    }
+    #section-7 .task ul li span {
+        font-size: 15px;
+    }
+    #section-7 .task ul li {
+        font-size: 16px;
+        line-height: 26px;
+    }
     #tariffs .box-footer .button{
         width: 240px;
     }
@@ -376,7 +608,7 @@
         padding: 58px 0 80px 0;
     }
     .white-popup-block {
-        padding: 30px 25px;
+        padding: 30px 15px;
     }
     #base .section-title, #complex .section-title, #sales .section-title {
         margin: 0 0 20px 0;
@@ -388,6 +620,12 @@
     .mfp-close-btn-in .mfp-close.type2 {
         right: 0;
         top: -55px;
+    }
+    .white-popup-block .info-box-description {
+        margin-left: 0;
+    }
+    .white-popup-block .button1 {
+        width: 100%;
     }
     .white-popup-block .info-box .info-box-title {
         font-size: 17px;
@@ -415,7 +653,31 @@
     }
     #answer .accordion p {
         font-size: 18px;
+        width: 76%;
     }
+    #portfolio .box {
+        margin-bottom: 30px;
+    }
+    #integration .box {
+        padding: 25px 45px 25px 20px;
+    }
+    #month-free{
+        display: none;
+    }
+    #support .suppert-wrapper {
+        padding: 30px 0 0 0;
+    }
+    #integration .box .button {
+        width: 237px;
+        height: 60px;
+    }
+    #integration .box p {
+        font-size: 15px;
+    }
+    #integration .box h4 {
+        font-size: 18px;
+    }
+
     .accordion .ui-accordion-header-icon {
         right: 0;
         width: 9px;
@@ -425,6 +687,47 @@
         right: 0;
         width: 14px;
         height: 23px;
+    }
+    footer .footer-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-box .social ,
+    footer .footer-box .contacts {
+        order: 2;
+    }
+    footer .footer-box .social a:first-child {
+        margin-right: 10px;
+    }
+    footer .logo {
+        text-align: center;
+    }
+    footer .footer-box .logo a:last-child{
+        display: none;
+    }
+    .button1{
+        height: 54px;
+    }
+    .button1:before {
+        width: 32px;
+        height: 42px;
+        background-size: contain;
+        left: 7px;
+        top: 12px;
+    }
+    .button1:after {
+        width: 80px;
+        height: 60px;
+        background-size: contain;
+        left: 8px;
+        top: 8px;
+    }
+    .button1 a {
+        font-size: 16px;
+    }
+    .button1{
+        width: 290px;
     }
 }
 @media (max-width: 320px) {

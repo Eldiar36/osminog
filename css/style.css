@@ -231,7 +231,7 @@ header .mobile-menu .mobile-menu-header .social img {
     z-index: 20;
     display: flex;
     flex-direction: column;
-    padding: 130px 75px 20px 75px;
+    padding: 130px 0 20px 35px;
     width: 100%;
     height: 100%;
     overflow-y: auto;
@@ -320,11 +320,7 @@ header .mobile-menu .mobile-menu-header .social img {
     right: 0;
     margin:  auto;
 }
-#team,
-#stages,
-#section-14{
-    display: none;
-}
+
 /*burger menu end*/
 .section-title {
     font-weight: 700;
@@ -548,9 +544,12 @@ header .mobile-menu .mobile-menu-header .social img {
     margin-right: 9px;
 }
 
-
+#bitrix-need {
+    padding: 50px 0;
+}
 #bitrix-need  .section-title{
     text-align: left;
+    margin-bottom: 140px;
 }
 #bitrix-need .box {
     position: relative;
@@ -558,8 +557,43 @@ header .mobile-menu .mobile-menu-header .social img {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 246px;
     height: 159px;
-    padding: 24px 32px 24px 32px;
+    padding: 20px 15px 20px 20px;
     z-index: 999;
+}
+#bitrix-need .box1 {
+    top: -2%;
+    left: -19%;
+}
+#bitrix-need .box2 {
+    top: -10%;
+}
+#bitrix-need .box3 {
+    right: -26%;
+    top: 15%;
+}
+#bitrix-need .box4{
+    right: -26%;
+    bottom: 14%;
+}
+#bitrix-need .box4 .box {
+    width: 300px;
+    height: 146px;
+
+}
+#bitrix-need .box5 {
+    bottom: -5%;
+}
+#bitrix-need .box6 {
+    left: -24%;
+    bottom: 20%;
+}
+#bitrix-need .box6 .box {
+    width: 246px;
+    height: 150px;
+}
+#bitrix-need .box5 .box {
+    width: 286px;
+    height: 139px;
 }
 #bitrix-need .box1,
 #bitrix-need .box2,
@@ -567,14 +601,9 @@ header .mobile-menu .mobile-menu-header .social img {
 #bitrix-need .box4,
 #bitrix-need .box5,
 #bitrix-need .box6 {
-    width: 246px;
-    height: 159px
-}
-#bitrix-need .main-box img {
-    margin-left: -51px;
-}
+    position: absolute;
 
-
+}
 #bitrix-need .box:after{
     content: "";
     width: 33px;
@@ -622,18 +651,21 @@ header .mobile-menu .mobile-menu-header .social img {
     box-sizing: border-box;
     border-radius: 50%;
     height: 796px;
+    width: 796px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+#bitrix-need .main-box img {
+    margin-left: -51px;
+}
 
 
 #application {
     padding: 40px 0;
 }
 #application .application-box{
-    background: url("../images/Group 869.png")no-repeat left;
+    background: url("../images/Group 869 (2).png")no-repeat left;
     background-size: contain;
     height: 638px;
     position: relative;
@@ -1036,18 +1068,6 @@ header .mobile-menu .mobile-menu-header .social img {
 #stages .info-box {
     position: relative;
 }
-#stages .info-box:before {
-    content: "";
-    width: 119px;
-    height: 119px;
-    background: linear-gradient(180deg, #6ECAFC 0%, #2391EB 100%);
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1;
-    border-radius: 50%;
-}
 #stages .info-box img {
     margin-bottom: 20px;
     object-fit: contain;
@@ -1062,7 +1082,6 @@ header .mobile-menu .mobile-menu-header .social img {
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
-
     color: #000000;
 }
 #stages .items .section-subtitle span {
@@ -1081,8 +1100,6 @@ header .mobile-menu .mobile-menu-header .social img {
 #stages .items-box .title {
     position: relative;
     top: -31px;
-    /* left: 0; */
-    /* right: 0; */
     border: 10px solid #6ECAFC;
     padding: 8px 26px;
     background: #FFFFFF;
@@ -1091,7 +1108,6 @@ header .mobile-menu .mobile-menu-header .social img {
     font-size: 21px;
     color: #000000;
     text-align: center;
-
 }
 #stages .items-box .items-info {
     align-items: normal;
@@ -1101,31 +1117,9 @@ header .mobile-menu .mobile-menu-header .social img {
     font-size: 15px;
     line-height: 18px;
 }
-#stages .items-box .items-info .img:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    width: 110px;
-    height: 110px;
-   border-radius: 50%;
-    background: linear-gradient(180deg, #6ECAFC 0%, #2391EB 100%);
-}
-#stages .items-box .items-info .img {
-    position: relative;
-    background: url("../images/image21.png")no-repeat right -37px center;
-    background-size: cover;
-    height: 128px;
-    width: 137px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#stages .items-box .items-info .img.second {
-    background: url("../images/image22.png")no-repeat right -30px center;
-    background-size: cover;
-
+#stages .img.second img {
+    width: 142px;
+    margin-top: 10px;
 }
 #stages .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
@@ -1136,6 +1130,12 @@ header .mobile-menu .mobile-menu-header .social img {
     position: absolute;
     right: -8%;
     top: 56%;
+}
+#stages .button1.first {
+    margin: 68px auto 0 auto;
+}
+#stages .button1 {
+    margin: 30px auto 0 auto;
 }
 #tariffs {
     padding:  0 0 66px 0;
@@ -1497,11 +1497,24 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 100%;
     height: 500px;
 }
+#team .box:before {
+    content: "";
+    width: 850px;
+    height: 850px;
+    background: url("../images/Ellipse 11.png")no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
 #team .box img {
     position: absolute;
     bottom: -80%;
 }
-/*#team .member:first-child{
+
+#team .member:first-child{
     position: absolute;
 }
 #team .members {
@@ -1511,7 +1524,7 @@ header .mobile-menu .mobile-menu-header .social img {
     position: relative;
     top: 80%;
 }
-#team .member:last-child {
+#team .member.member1 {
     position: absolute;
     right: 60px;
     bottom: 0;
@@ -1529,7 +1542,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #team .name span {
     display: block;
-}*/
+}
 #answer {
     padding: 30px 0 100px 0;
 }
@@ -1868,6 +1881,23 @@ footer .footer-box .contacts {
 .owl-carousel .owl-nav button.owl-next:hover {
     background: url("../images/Group 745.png")no-repeat;
     background-size: contain;
+}
+#base2 {
+    padding: 0;
+}
+#base2 .mfp-container {
+    padding: 0;
+}
+#base2 .popup-wrapper {
+    padding: 0;
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
 }
 
 
