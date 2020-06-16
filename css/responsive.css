@@ -613,6 +613,14 @@
 
 }
 @media (max-width: 480px) {
+    .burger-menu_link {
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
     .container{
         padding: 0 15px;
     }
