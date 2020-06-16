@@ -369,6 +369,13 @@
     #section-7 .task {
         margin-bottom: 30px;
     }
+    #section-14 .right-box {
+        background: url(../images/image13.png)no-repeat;
+        background-size: cover;
+        height: 355px;
+        margin-top: 0;
+        margin-left: -80px;
+    }
     #integration .box {
         margin-bottom: 30px;
     }
@@ -526,12 +533,18 @@
     #base2 .popup-wrapper .button1 {
         margin-top: 30px;
     }
+    #section-14 .member {
+        margin-top: 138px;
+        margin-left: -82px;
+        padding-top: 0;
+        padding-left: 0;
+    }
 
 }
 @media (max-width: 767px) {
     .container {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 30px;
     }
     #bitrix-need {
         padding: 20px 0 0 0;
@@ -554,8 +567,23 @@
     #iframe-video .section-subtitle {
         margin: 36px 0 86px 0;
     }
+    #section-14 .right-box {
+        margin-top: 22px;
+        margin-left: -24px;
+    }
     #team .box {
         height: 230px;
+    }
+    #portfolio .second{
+        position: absolute;
+        right: -75px;
+    }
+
+    #portfolio .third{
+        display: none;
+    }
+    #portfolio .box{
+        height: 200px;
     }
     #base2 .popup-block {
         margin: 20px 0;
@@ -585,6 +613,9 @@
 
 }
 @media (max-width: 480px) {
+    .container{
+        padding: 0 15px;
+    }
     #stages .owl-carousel .owl-nav button.owl-prev{
         width: 50px;
         top: 44%;
@@ -620,6 +651,18 @@
     .button {
         width: 100%;
         height: 74px;
+    }
+    .button-owner:before {
+        width: 81px;
+        height: 67px;
+        left: 7px;
+        top: 14px;
+    }
+    .button-owner {
+        width: 290px;
+    }
+    .button-owner a {
+        margin-left: 50px;
     }
     .section-title{
         font-size: 25px;
@@ -719,6 +762,13 @@
         padding: 34px 26px;
         height: auto;
     }
+    #section-14 .pc {
+        display: none;
+
+    }
+    #mobile {
+        display: block;
+    }
     #section-7 .task ul li span {
         font-size: 15px;
     }
@@ -752,9 +802,6 @@
         top: 0;
         left: 72px;
         height: 97px;
-    }
-    #team .box {
-        height: 140px;
     }
     .white-popup-block {
         padding: 30px 15px;
@@ -829,10 +876,7 @@
     #integration .question-box .button1 a {
         margin-left: 75px;
     }
-    #portfolio .second{
-        position: absolute;
-        right: -60px;
-    }
+
     .iframe-body {
         width: 72%;
         margin: 0 auto;
@@ -912,6 +956,18 @@
     }
 
 }
-@media (max-width: 320px) {
-
+@media (max-width: 360px) {
+        .button1 {
+            width: 260px!important;
+        }
+    .button1:after {
+        width: 62px;
+        left: 8px;
+        top: 14px;
+    }
+    .button1:before {
+        width: 27px;
+        left: 5px;
+        top: 12px;
+    }
 }
