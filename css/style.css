@@ -336,16 +336,61 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 .button1 {
     position: relative;
-    overflow: hidden;
     width: 357px;
     height: 74px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(179.3deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0 2.11009px 0 #00569C;
+    box-shadow: 0 2.11009px 4px #00569C;
     border-radius: 70.3363px;
     border: none;
+    color: #ffffff;
+    font-size: 17px;
+    padding-left: 60px;
+}
+#integration .button1 {
+    padding-left: 80px;
+}
+#consultation .button1 {
+    padding-left: 80px;
+}
+.button1:hover,
+.button1:focus{
+    color: #ffffff;
+}
+.button{
+    margin-top: 39px;
+    background: linear-gradient(179.32deg, #6ECAFC 2.82%, #2391EB 108.82%);
+    box-shadow: 0 2.11009px 4px #00569C;
+    border-radius: 70px;
+    border: none;
+    width: 427px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer ;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.button:hover,
+.button:focus {
+    color: #ffffff;
+}
+.button.last:after{
+    content: "";
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 210px;
+    height: 54px;
+    border-radius: 70px;
 }
 .button1:before {
     content: "";
@@ -354,76 +399,81 @@ header .mobile-menu .mobile-menu-header .social img {
     background: url("../images/image 5.png")no-repeat;
     background-size: cover;
     position: absolute;
-    left: 5px;
-    top: 9px;
+    left: 11px;
+    top: 19px;
 }
 .button1:after {
     content: "";
-    width: 100px;
-    height: 63px;
+    width: 89px;
+    height: 52px;
     background: url("../images/image4(1).png")no-repeat;
     background-size: contain;
     position: absolute;
-    left: 9px;
-    top: 9px;
+    left: 23px;
+    top: 21px;
 }
-.button1 a {
-    color: #ffffff;
-    margin-left: 35px;
-    font-size: 17px;
-}
+
 .button2{
     text-align: center;
     position: relative;
     background: #FFFFFF;
-    box-shadow: 0 2.11009px 0 #00569C;
+    box-shadow: 0 2.11009px 4px #00569C;
     border-radius: 70.3363px;
     width: 338px;
     height: 74px;
     border: none;
-}
-.button2 a {
     color: #000000;
     font-weight: 600;
     margin-left: 30px;
     font-size: 16px;
-    line-height: 20px
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .button2:before{
+
     content: "";
-    width: 75px;
-    height: 57px;
+    width: 50px;
+    height: 49px;
     background: url("../images/image 14.png")no-repeat;
     background-size: contain;
     position: absolute;
-    left: 20px;
-    top: 7px;
+    left: 19px;
+    top: 17px;
 }
+
 .button-owner {
     position: relative;
     background: linear-gradient(179.45deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0 2.11009px 0 #00569C;
+    box-shadow: 0 2.11009px 4px #00569C;
     border-radius: 70.3363px;
     width: 429px;
     height: 74px;
     border: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 50px auto 0 auto;
+    padding-left: 60px;
+    color: #ffffff;
 }
 .button-owner:before{
     content: "";
     background: url("../images/image4.png")no-repeat;
     background-size: contain;
-    width: 89px;
-    height: 67px;
+    width: 80px;
+    height: 60px;
     position: absolute;
-    left: 27px;
-    top: 8px;
-}
-.button-owner a {
+    left: 20px;
+    top: 15px;
     color: #ffffff;
-    margin-left: 89px;
     font-size: 15px;
+}
+.button-owner:hover,
+.button-owner:focus{
+    color: #ffffff;
 }
 #home {
     padding-top: 12px;
@@ -466,26 +516,7 @@ header .mobile-menu .mobile-menu-header .social img {
     line-height: 28px;
     color: #000000;
 }
-  .button{
-    margin-top: 39px;
-    background: linear-gradient(179.32deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0 2.11009px 0 #00569C;
-    border-radius: 70px;
-    border: none;
-    width: 427px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer ;
-}
- .button a {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-}
+
 #home .right-box {
     background: url("../images/homebg.png") no-repeat center;
     padding: 382px 0 247px 0;
@@ -722,7 +753,6 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #application .button1 {
     width: 100%;
-    display: block;
 }
 
 
@@ -783,7 +813,8 @@ header .mobile-menu .mobile-menu-header .social img {
     margin-top: 38px;
 }
 #iframe-video .button1{
-    display: block;
+    padding-left: 20px;
+    display: flex;
     margin: 50px auto 0 auto;
 }
 #about-bitrix {
@@ -879,7 +910,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #owner .owner-info-wrapper {
     position: relative;
-    z-index: 9999;
+    z-index: 999;
 }
 
 #owner .owner-info {
@@ -1155,6 +1186,7 @@ header .mobile-menu .mobile-menu-header .social img {
     background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 27px 20px 22px 18px;
+    border-radius: 10px;
 }
 #tariffs  .box-header {
     border-bottom: 1px solid #51B4F5;
@@ -1176,7 +1208,7 @@ header .mobile-menu .mobile-menu-header .social img {
     color: #000000;
 }
 
-#tariffs .box-footer button {
+#tariffs .box-footer .button {
     margin-top: 0;
     width: 100%;
     height: 54px;
@@ -1205,6 +1237,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #tariffs .box-wrapper.project .box-header {
     border-bottom: 1px solid #FFFFFF;
+    padding: 20px 0 20px 0;
 }
 #tariffs .box-wrapper.project .box-body p {
     color: #FFFFFF;
@@ -1213,13 +1246,11 @@ header .mobile-menu .mobile-menu-header .social img {
     background: linear-gradient(179.29deg, #FFFFFF 2.82%, #ADDAFF 108.82%);
     box-shadow: 0 2.11009px 0  #00569C;
 }
-#tariffs .box-wrapper.project .box-footer .button a {
+#tariffs .box-wrapper.project .box-footer .button  {
     color: #000000;
 }
 #support {
     background: linear-gradient(180deg, #6ECAFC -51.3%, #2391EB 100%);
-
-
     z-index: -1;
 }
 #support .suppert-wrapper {
@@ -1297,9 +1328,10 @@ header .mobile-menu .mobile-menu-header .social img {
     border-radius: 10px;
     margin-top: -132px;
 }
-#month-free form .button {
+#month-free form .button1 {
     width: 357px;
     height: 74px;
+    padding-left: 0;
 }
 #month-free .right-col p {
     text-align: center;
@@ -1393,15 +1425,15 @@ header .mobile-menu .mobile-menu-header .social img {
     font-size: 20px;
     line-height: 24px;
 }
-#section-14 .button {
+#section-14 .button2 {
     background: #FFFFFF;
     box-shadow: 0 2.11009px 0 #00569C;
-    width: 338px;
+    width: 311px;
     height: 74px;
-}
-#section-14 .button a {
     color: #000000;
+    margin-left: 0;
 }
+
 #section-14 .right-box {
     background: url("../images/image13.png")no-repeat;
     background-size: cover;
@@ -1432,7 +1464,7 @@ header .mobile-menu .mobile-menu-header .social img {
 #mobile .img {
     background: url(../images/mobile-michail.png)no-repeat;
     background-size: cover;
-    width: 151%;
+    width: 200%;
     height: 391px;
     position: absolute;
     right: 0;
@@ -1458,6 +1490,7 @@ header .mobile-menu .mobile-menu-header .social img {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 50px 15px 51px 15px;
 }
+
 #portfolio .box img {
     display: block;
     margin: 0 auto;
@@ -1481,6 +1514,9 @@ header .mobile-menu .mobile-menu-header .social img {
     position: absolute;
     top: -47px;
     right: -102px;
+}
+#portfolio .mobile-portfolio{
+    display: none;
 }
 #reviews {
     padding: 90px 0;
@@ -1781,6 +1817,7 @@ footer .footer-box .contacts {
     background: #FFFFFF;
     border-radius: 20px;
     padding: 40px 44px 40px 44px;
+    z-index: 99999999;
 }
  .mfp-container {
     padding: 100px 0;
@@ -1815,8 +1852,8 @@ footer .footer-box .contacts {
 }
 .mfp-close-btn-in .mfp-close {
     position: absolute;
-    right: -5%;
-    top: -8%;
+    right: 0;
+    top: -15%;
     font-size: 51px;
     color: #ffffff;
     z-index: 999;
@@ -1867,7 +1904,7 @@ footer .footer-box .contacts {
     line-height: 28px;
 }
 .white-popup-block .button1 {
-    margin: 40px auto 0 auto;
+    margin: 15px auto 10px auto;
 }
 #base .section-title,
 #complex .section-title,
@@ -2044,6 +2081,29 @@ footer .footer-box .contacts {
 #complex2 .mfp-container{
     padding: 0;
 }
+#zayavka .button1 {
+    padding-left: 0;
+}
+.js-main-form {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mfp-iframe-scaler .mfp-close-btn-in .mfp-close {
+    position: absolute;
+    right: 4%;
+    top: -15%;
+}
+.mfp-figure figure {
+    margin: 0;
+    background: #f8f8f8;
+
+}
+.mfp-figure .mfp-close{
+    top: 0;
+}
+
 
 
 

@@ -93,12 +93,53 @@ $(document).ready(function(){
 
     });
 });
+$(document).ready(function(){
+    $(".mobile-portfolio").owlCarousel({
+        items: 1.7,
+        loop:true,
+        autoHeight: true,
+        stagePadding: 5,
+        nav:false,
+        margin:40,
+        navText:false,
+        dots:false,
+        responsive: {
+            0: {
+                items:1.5,
+                dots: false
+            },
+            600: {
+                items:0
+            },
+            900: {
+                items:0
+            },
+
+        }
+
+    });
+});
 $('.burger-menu_button').on(  'click',function () {
     $('.burger-menu').toggleClass('burger-menu_active')
 });
 $('.burger-menu_link').on('click',function () {
     $('.burger-menu').removeClass('burger-menu_active')
 });
+jQuery(document).ready(function($) {
+    $('.iframe-youtube').magnificPopup({
+        type: 'iframe',
+        height: "100vh",
+
+    });
+});
+$('.image-popup-zoom').magnificPopup({
+    type: 'image',
+    zoom: {
+        enabled: true,
+        duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+    }
+});
+
 jQuery(document).ready(function($) {
     $('.popup-with-form').magnificPopup({
         type: 'inline',
@@ -125,7 +166,9 @@ jQuery(document).ready(function($) {
 });
 
 
- $(function(){
+
+
+$(function(){
     $( "#accordion" ).accordion({
          collapsible: true,
         active:1,
