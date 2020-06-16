@@ -33,6 +33,9 @@ body {
     font-family: 'Mazzard M',sans-serif;
 
 }
+main {
+    overflow-x: hidden;
+}
 .container {
     padding: 0;
     margin-right: auto;
@@ -850,7 +853,7 @@ header .mobile-menu .mobile-menu-header .social img {
     bottom: -55px;
     cursor: initial;
 }
-#owner .owner-info .button-owner {
+#owner .owner-info-wrapper .button-owner {
     display: none;
 }
 #owner .owner-img {
@@ -1139,7 +1142,7 @@ header .mobile-menu .mobile-menu-header .social img {
     margin: 68px auto 0 auto;
 }
 #stages .button1 {
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 #tariffs {
     padding:  0 0 66px 0;
@@ -1490,6 +1493,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #team .section-title {
     font-weight: 400;
+    margin-bottom: 50px;
 }
 #team .section-title span {
     font-weight: 700;
@@ -1503,13 +1507,25 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #team .box:before {
     content: "";
-    width: 850px;
-    height: 850px;
-    background: url("../images/Ellipse 11.png")no-repeat;
+    width: 42px;
+    height: 42px;
+    background: url("../images/teambefore.png")no-repeat;
     background-size: contain;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 20%;
+    top: 16%;
+    margin: auto;
+    z-index: -1;
+}
+#team .box:after {
+    content: "";
+    width: 42px;
+    height: 42px;
+    background: url("../images/teambefore.png")no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 20%;
+    top: 2%;
     margin: auto;
     z-index: -1;
 }
@@ -1517,21 +1533,50 @@ header .mobile-menu .mobile-menu-header .social img {
     position: absolute;
     bottom: -80%;
 }
-
-#team .member:first-child{
-    position: absolute;
-}
 #team .members {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     top: 80%;
 }
 #team .member.member1 {
     position: absolute;
-    right: 60px;
-    bottom: 0;
+    left: 52px;
+    bottom: 3px;
+}
+#team .member.member2 {
+    position: absolute;
+    left: 17%;
+    bottom: 18px;
+}
+#team .member.member3 {
+    position: absolute;
+    left: 29%;
+    bottom: 33px;
+}
+#team .member.member4{
+    margin-top: -147px;
+    margin-left: -45px;
+}
+#team .member.member4 .name {
+    background: linear-gradient(180deg, #6ECAFC 0%, #2391EB 100%);
+
+}
+#team .member.member5 {
+    position: absolute;
+    bottom: 33px;
+    right: 33%;
+}
+#team .member.member6 {
+    position: absolute;
+    right: 21%;
+    bottom: 18px;
+}
+#team .member.member7 {
+    position: absolute;
+    right: 7%;
+    bottom: 3px;
 }
 #team .member {
     margin-right: 10px;
@@ -1540,7 +1585,7 @@ header .mobile-menu .mobile-menu-header .social img {
     text-align: left;
     height: auto;
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
     padding: 9px 10px;
 
 }
@@ -1655,7 +1700,30 @@ footer .footer-box .social,
 footer .footer-box .contacts {
     margin-top: 30px;
 }
-
+.owl-carousel .owl-nav button.owl-prev {
+    background: url("../images/Group 746.png")no-repeat;
+    background-size: contain;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background: url("../images/Group 746.png")no-repeat;
+    background-size: contain;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background: url("../images/Group 745.png")no-repeat;
+    background-size: contain;
+    width: 74px;
+    /* font-size: 30px; */
+    height: 74px;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+    background: url("../images/Group 745.png")no-repeat;
+    background-size: contain;
+}
+/*popup styles start*/
 .mfp-bg {
     background: rgba(0, 86, 156, 0.9);
     opacity: 1;
@@ -1788,29 +1856,6 @@ footer .footer-box .contacts {
     z-index: 1;
     transform: rotate(-6deg);
 }*/
-.owl-carousel .owl-nav button.owl-prev {
-    background: url("../images/Group 746.png")no-repeat;
-    background-size: contain;
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-}
-.owl-carousel .owl-nav button.owl-prev:hover {
-    background: url("../images/Group 746.png")no-repeat;
-    background-size: contain;
-}
-.owl-carousel .owl-nav button.owl-next{
-    background: url("../images/Group 745.png")no-repeat;
-    background-size: contain;
-    width: 74px;
-    /* font-size: 30px; */
-    height: 74px;
-    border-radius: 50%;
-}
-.owl-carousel .owl-nav button.owl-next:hover {
-    background: url("../images/Group 745.png")no-repeat;
-    background-size: contain;
-}
 
 #base2 .section-title,
 #complex2 .section-title {

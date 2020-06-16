@@ -178,6 +178,38 @@
     #bitrix-programs .owl-carousel .owl-nav button.owl-next {
         right: 0;
     }
+    #team .box {
+        height: 400px;
+    }
+    #team .members {
+        top: 82%;
+    }
+    #team .name {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    #team .member.member1 {
+        left: 24px;
+    }
+    #team .member.member2 {
+
+        left: 16%;
+    }
+    #team .member.member3 {
+        left: 29%;
+    }
+    #team .member.member4 {
+        margin-left: -30px;
+    }
+    #team .member.member5 {
+        right: 32%;
+    }
+    #team .member.member6 {
+        right: 19%;
+    }
+    #team .member.member7 {
+        right: 4%;
+    }
 }
 @media (max-width: 991px) {
     #home,
@@ -470,6 +502,16 @@
     #portfolio .box {
         margin-bottom: 30px;
     }
+    #team .members {
+        display: none;
+    }
+    #team .box {
+        height: 300px;
+    }
+    #team .box:before,
+    #team .box:after {
+        display: none;
+    }
     #complex2 .num {
         display: none;
     }
@@ -484,6 +526,7 @@
     #base2 .popup-wrapper .button1 {
         margin-top: 30px;
     }
+
 }
 @media (max-width: 767px) {
     .container {
@@ -510,6 +553,9 @@
     }
     #iframe-video .section-subtitle {
         margin: 36px 0 86px 0;
+    }
+    #team .box {
+        height: 230px;
     }
     #base2 .popup-block {
         margin: 20px 0;
@@ -706,6 +752,9 @@
         top: 0;
         left: 72px;
         height: 97px;
+    }
+    #team .box {
+        height: 140px;
     }
     .white-popup-block {
         padding: 30px 15px;
