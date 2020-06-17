@@ -235,7 +235,7 @@ header .mobile-menu .mobile-menu-header .social img {
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 130px 0 20px 35px;
+    padding: 35% 0 20px 35px;
     width: 100%;
     height: 100%;
     z-index: 999999;
@@ -291,7 +291,7 @@ header .mobile-menu .mobile-menu-header .social img {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 50px;
+    top: 92%;
     cursor: pointer;
     text-align: center;
     color: #FFFFFF;
