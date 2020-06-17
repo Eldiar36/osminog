@@ -668,7 +668,24 @@
     .home-row {
         flex-direction: column-reverse;
     }
-
+    #home,
+    #about-bitrix,
+    #section-7,
+    #section-14,
+    #answer,
+    #owner,
+    #stages,
+    #team,
+    #tariffs,
+    #reviews,
+    #portfolio,
+    #integration,
+    #iframe-video,
+    #bitrix-need,
+    #application,
+    #iframe-video{
+        padding: 25px 0;
+    }
     #bitrix-need .box1 .box,
     #bitrix-need .box2 .box,
     #bitrix-need .box3 .box,
@@ -759,16 +776,24 @@
         right: -104px;
         top: 0;
     }
+    #about-bitrix .box-number {
+        height: 184px;
+        margin-top: -20px;
+        margin-bottom: -27px;
+    }
     #about-bitrix .box-info {
-        height: 390px;
+        height: auto;
         width: 100%;
-        padding: 37px 38px 32px 38px;
+        padding: 37px 38px 38px 38px;
+    }
+    #about-bitrix .box-info.last {
+        height: 332px;
     }
     #owner{
         padding: 0;
     }
     .iframe-box {
-
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
         height: 193px;
         padding: 0;
         z-index: 999;
@@ -858,7 +883,7 @@
         height: 248px;
         background: url("../images/owner-mobile1.png")no-repeat;
         background-size: contain;
-        top: 29%;
+        top: 22%;
     }
     #owner .owner-img:after {
         content: "";
@@ -867,10 +892,13 @@
         background: url("../images/owner-mobile2.png")no-repeat;
         background-size: contain;
         right: 5px;
-        top: 41%;
+        top: 38%;
     }
     #owner .owner-img-wrapper {
-        height: 600px;
+        height: 367px;
+    }
+    #owner .owner-info-wrapper {
+        margin-top: -127px;
     }
     #section-7 .section-title {
         margin-bottom: 23px;
@@ -910,7 +938,7 @@
         line-height: 26px;
     }
     #tariffs .box-footer .button{
-        width: 284px;
+        width: 100%;
     }
     #bitrix-programs {
         padding: 58px 0 80px 0;
@@ -936,6 +964,12 @@
         left: 72px;
         height: 97px;
     }
+    #tariffs .button{
+        width: 297px;
+    }
+    #tariffs .button.last:after {
+        width: 275px;
+    }
     #portfolio{
         padding: 25px 0;
     }
@@ -944,7 +978,7 @@
     }
     #reviews  .iframe-body a img {
         width: 42px;
-        margin-top: -10px;
+        margin-top: -40px;
     }
     .white-popup-block {
         padding: 30px 15px;
@@ -1008,8 +1042,8 @@
         padding: 30px 0 0 0;
     }
     #integration .box .button {
-        width: 237px;
-        height: 60px;
+        width: 230px;
+        height: 44px;
     }
     #integration .box p {
         font-size: 15px;
@@ -1042,7 +1076,7 @@
         margin-bottom: 15px;
     }
     #team .box {
-        height: 138px;
+        height: 143px;
     }
     .accordion .ui-accordion-header-icon {
         right: 0;
@@ -1090,17 +1124,47 @@
     .white-popup-block .button1 {
         padding-left: 0;
     }
+    #consultation .button1{
+        padding-left: 110px;
+    }
+    #price .button1 {
+        padding-left: 90px;
+    }
+    #reviews .iframe-box-wrapper:after {
+        display: none;
+    }
+    #application .button1{
+        width: 100%!important;
+    }
     .button1{
         height: 74px;
         width: 290px!important;
         padding-left: 50px;
     }
     #complex2 .popup-wrapper {
-        padding: 160px 0;
-        height: 141vh;
+        padding: 59px 0;
+        height: 152vh;
     }
     #answer .accordion p {
         top: -1px;
+    }
+    #answer .asnwer-content {
+        height: 540px!important;!important;
+    }
+    #test .button1 {
+        padding-left: 60px;
+    }
+    #introduction .button1{
+        padding-left: 80px;
+    }
+    #owner-popup .button1{
+        padding-left: 80px;
+    }
+    #michail-consultation .button1{
+        padding-left: 69px;
+    }
+    .white-popup-block .confidential a  {
+        font-size: 16px;
     }
 
 }
@@ -1108,14 +1172,20 @@
         .button1 {
             width: 260px!important;
         }
-    .button1:after {
-        width: 62px;
-        left: 8px;
-        top: 14px;
+    #introduction .button1 {
+        padding-left: 110px;
     }
-    .button1:before {
-        width: 27px;
-        left: 5px;
-        top: 12px;
+    .white-popup-block .button1:after {
+        width: 72px;
+        left: 20px;
+        top: 24px;
     }
+    #owner .owner-header h2 {
+        font-weight: bold;
+        font-size: 23px;
+    }
+    #owner .owner-header .status {
+        font-size: 18px;
+    }
+
 }

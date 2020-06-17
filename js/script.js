@@ -119,11 +119,14 @@ $(document).ready(function(){
 
     });
 });
+let menu = document.getElementById("burger-menu");
 $('.burger-menu_button').on(  'click',function () {
     $('.burger-menu').toggleClass('burger-menu_active')
+
 });
 $('.burger-menu_link').on('click',function () {
-    $('.burger-menu').removeClass('burger-menu_active')
+    $('.burger-menu').removeClass('burger-menu_active');
+
 });
 jQuery(document).ready(function($) {
     $('.iframe-youtube').magnificPopup({
