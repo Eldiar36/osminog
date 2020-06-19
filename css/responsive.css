@@ -217,6 +217,9 @@
     #team .member.member7 {
         right: 4%;
     }
+    .popup-block h2 {
+        font-size: 30px;
+    }
 }
 @media (max-width: 991px) {
     #home,
@@ -551,8 +554,8 @@
         margin-top: 30px;
     }
     #section-14 .member {
-        margin-top: 138px;
-        margin-left: -82px;
+        margin-top: 162px;
+        margin-left: -126px;
         padding-top: 0;
         padding-left: 0;
     }
@@ -567,6 +570,13 @@
         height: 100%;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
         background: #000;
+    }
+    footer .footer-box .social a:first-child {
+        margin-right: 15px;
+    }
+    footer .footer-box .contacts p {
+        font-size: 17px;
+        line-height: 11px;
     }
 
 }
@@ -672,11 +682,34 @@
         padding: 0 15px;
     }
     header .mobile-menu .mobile-menu-bottom .license img {
-        width: 85px!important;
+        width: 75px!important;
+        object-fit: contain;
+    }
+    .btn-block .box-shadow{
+        width: 100%;
+    }
+    #integration .btn-block .box-shadow {
+        width: 290px;
+    }
+    #zayavka .btn-block1 .box-shadow{
+        width: 290px;
     }
     .home-row {
         flex-direction: column-reverse;
     }
+    .button1{
+        padding-left: 80px;
+        font-size: 17px!important;
+    }
+    .button1 img {
+        width: 80px!important;
+        height: 56px!important;
+        position: absolute;
+        left: 3px;
+        background-size: contain;
+        top: 18px;
+    }
+
     #home,
     #about-bitrix,
     #section-7,
@@ -735,8 +768,45 @@
         font-size: 25px;
         line-height: 30px;
     }
+    #home {
+        position: relative;
+    }
+    #home:before{
+        content: "";
+        position: absolute;
+        left: -9px;
+        top: 8%;
+        background: url(../images/home-mobile-before.png)no-repeat;
+        background-size: contain;
+        width: 151px;
+        height: 151px;
+        z-index: 99;
+
+    }
+    #home .right-box:before{
+        content: "";
+        background: url("../images/home-mobile-after.png")no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 32px;
+        height: 32px;
+    }
+    #home .right-box:after{
+        height: 284px;
+        width: 299px;
+        position: absolute;
+        left: 67%;
+        top: -5%;
+        z-index: -1;
+    }
     #home .left-box {
         padding: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #home .right-box {
         padding: 252px 0 177px 0;
@@ -744,9 +814,10 @@
     }
     #home .right-box .whatsapp {
         bottom: -17px;
-        width: 109px;
+        width: 115px;
         height: 24px;
-        font-size: 7px;
+        font-size: 8px;
+        right: -5px;
         padding: 11px 7px 5px 3px;
     }
     #home .left-box .subtitle {
@@ -759,16 +830,21 @@
         height: 74px;
         margin: 4px 0;
     }
+    #home .members {
+        justify-content: space-between;
+    }
     .member.founder {
-        margin-top: -67px;
+        margin-right: 0;
+        margin-top: -55px;
     }
     .members .member .name {
-        padding: 6px 5px;
+        padding: 6px 12px;
         line-height: 15px;
-        font-size: 13px;
+        font-size: 15px;
     }
     .member.developer {
-        margin-top: 20px;
+        margin-top: 2px;
+        margin-right: 32px;
     }
     #home .left-box .section-title {
         font-size: 25px;
@@ -776,9 +852,14 @@
         margin-bottom: 25px;
     }
     #bitrix-need .main-box img {
-        order: 2;
+        display: none;
     }
-
+    #bitrix-need .main-box img.mobile{
+        display: flex;
+        order: 2;
+        width: 298px;
+        margin-left: -19px;
+    }
     #about-bitrix .box-number {
         height: 184px;
         margin-top: -20px;
@@ -796,22 +877,38 @@
         padding: 0;
     }
     #stages .owl-carousel .owl-nav button.owl-prev{
-        width: 50px;
-        top: 44%;
+        width: 34px;
+        top: 38%;
     }
 
     #stages .owl-carousel .owl-nav button.owl-next{
-        width: 50px;
-        top: 44%;
+        width: 34px;
+        top: 38%;
     }
     #stages .button1 {
-        padding-left: 136px;
+        padding-left: 65px;
     }
     #stages .first-row {
         margin-top: 10px;
     }
+    #stages .items-box {
+        width: 97%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #stages .items-box.two {
+        width: 97%;
+        margin-left: 5px;
+        margin-right: 7px;
+    }
     #stages .items .section-title {
         margin: 15px 0 20px 0!important;
+    }
+    #stages .button1{
+        width: 90%;
+    }
+    #stages  .box-shadow{
+        width: 90%;
     }
     #application {
         padding: 0;
@@ -834,26 +931,7 @@
         height: 74px;
         padding-left: 59px;
     }
-    #application .button1:before{
-        content: "";
-        width: 42px;
-        height: 55px;
-        background: url("../images/image 5.png")no-repeat;
-        background-size: cover;
-        position: absolute;
-        left: 11px;
-        top: 19px;
-    }
-    #application .button1:after {
-        content: "";
-        width: 89px;
-        height: 52px;
-        background: url("../images/image4(1).png")no-repeat;
-        background-size: contain;
-        position: absolute;
-        left: 23px;
-        top: 21px;
-    }
+   
     #application .application-box {
         height: 300px;
     }
@@ -862,7 +940,7 @@
         top: 0;
     }
     #iframe-video .button1 {
-        padding-left: 90px;
+        padding-left: 110px;
     }
     #iframe-video .iframe-body a {
         margin-top: 38px;
@@ -875,7 +953,7 @@
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
         height: 193px;
         padding: 0;
-        z-index: 999;
+        z-index: auto;
     }
     #iframe-video .iframe-box:before {
         width: 106px;
@@ -883,10 +961,13 @@
         left: -19%;
         top: -49px;
         z-index: -1;
+        background: url("../images/Ellipse 10 (2).png")no-repeat;
+        background-size: contain;
     }
     #iframe-video .iframe-box:after {
         width: 188px;
         height: 188px;
+        bottom: -20px;
     }
     .iframe-box-wrapper{
         height: 200px;
@@ -909,7 +990,7 @@
     #owner .owner-info-wrapper .button-owner {
         display: flex;
         margin: 30px auto 0 auto;
-        padding-left: 91px;
+        padding-left: 67px;
     }
     #owner .owner-img {
         background-size: contain;
@@ -1224,8 +1305,55 @@
     .white-popup-block .button1 {
         padding-left: 0;
     }
-    #consultation .button1{
-        padding-left: 110px;
+    #base.white-popup-block:before,
+    #complex.white-popup-block:before,
+    #sales.white-popup-block:before {
+        content: "";
+        background: url(../images/element2.png)no-repeat;
+        background-size: cover;
+        width: 95px;
+        height: 94px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -10;
+    }
+    #base.white-popup-block:after,
+    #complex.white-popup-block:after,
+    #sales.white-popup-block:after {
+        content: "";
+        background: url(../images/element3.png)no-repeat;
+        background-size: contain;
+        width: 210px;
+        height: 290px;
+        position: absolute;
+        left: -50px;
+        z-index: -1;
+        bottom: -89px;
+    }
+    #base.white-popup-block .button1,
+    #complex.white-popup-block .button1,
+    #sales.white-popup-block .button1{
+        width: 100%!important;
+    }
+    .white-popup-block:before{
+        width: 150px;
+        height: 150px;
+        background: url(../images/element1-mobile.png)no-repeat;
+        background-size: contain;
+        right: 0;
+        top: 0;
+    }
+    .white-popup-block:after{
+        width: 450px;
+        height: 455px;
+        position: absolute;
+        left: -52%;
+        z-index: -1;
+        bottom: -55%;
+    }
+    #consultation .button1 {
+        padding-left: 30px;
     }
     #price .button1 {
         padding-left: 90px;
@@ -1236,12 +1364,12 @@
     }
     .button1{
         height: 74px;
-        width: 290px!important;
+        width: 100%;
         padding-left: 50px;
     }
     #complex2 .popup-wrapper {
         padding: 59px 0;
-        height: 152vh;
+        height: 100%;
     }
     #test .button1 {
         padding-left: 60px;
@@ -1250,10 +1378,10 @@
         padding-left: 80px;
     }
     #owner-popup .button1{
-        padding-left: 80px;
+        padding-left: 60px;
     }
-    #michail-consultation .button1{
-        padding-left: 69px;
+    #michail-consultation .button1 {
+        padding-left: 100px;
     }
     .white-popup-block .confidential a  {
         font-size: 16px;
@@ -1262,31 +1390,75 @@
         height: auto;
         padding: 30px 20px;
     }
+    #base2:before {
+        width: 149px;
+        height: 136px;
+    }
+    #base2:after {
+        width: 194px;
+        height: 174px;
+        right: -44px;
+        top: 203px;
+    }
+    #complex2:before {
+         content: "";
+         width: 319px;
+         height: 319px;
+         }
+    #complex2:after {
+        width: 92px;
+        height: 88px;
+        right: -1px;
+        top: 0;
+    }
     #base2 .button1,
     #complex2 .button1{
         margin: 20px  auto 0 auto;
+        width: 100%!important;
     }
 
     #zayavka .button1{
         padding-left: 75px;
     }
+    #test .btn-block .box-shadow {
+        width: 290px
+    }
+    #base .btn-block .box-shadow, #complex .btn-block .box-shadow, #sales .btn-block .box-shadow {
+        width: 100%;
+    }
+    #base.white-popup-block .button1, #complex.white-popup-block .button1, #sales.white-popup-block .button1 {
+
+        padding-left: 45px;
+    }
+    #integration .question-box .button1{
+        width: 100%;
+    }
 
 }
 @media (max-width: 360px) {
         .button1 {
-            width: 260px!important;
+            width: 100%;
         }
     #introduction .button1 {
         padding-left: 110px;
     }
-    .white-popup-block .button1:after {
-        width: 72px;
-        left: 20px;
-        top: 24px;
+    #test .button1 {
+        padding-left: 70px;
     }
     #owner .owner-header h2 {
         font-weight: bold;
         font-size: 23px;
+    }
+
+    #base2:after {
+        display: none;
+    }
+    #complex2:before{
+        display: none;
+    }
+    #complex2 .button1, #base2 .button1 {
+        width: 100%!important;
+        padding-left: 30px;
     }
     #owner .owner-header .status {
         font-size: 18px;
@@ -1294,23 +1466,73 @@
     #zayavka .button1 {
         padding-left: 60px;
     }
-    #complex2 .button1,
-    #base2 .button1{
-        width: 100%!important;
-        padding-left: 63px;
+    #complex2 .section-title {
+        margin-bottom: 0;
+    }
+
+    #zayavka .button1 {
+        padding-left: 108px;
     }
     #team .box {
         height: 120px;
     }
     #stages .owl-carousel .owl-nav button.owl-next {
-        width: 50px;
+        width: 34px;
         top: 35%;
         right: -4%;
     }
     #stages .owl-carousel .owl-nav button.owl-prev {
-        width: 50px;
+        width: 34px;
         top: 35%;
         left: -4%;
     }
+    .members .member .name {
+        padding: 6px 12px;
+        line-height: 15px;
+        font-size: 13px;
+    }
+    #home .right-box {
+        padding: 183px 0 132px 0;
+        height: 0;
+    }
+    #home:before {
+        left: -6px;
+        top: 4%;
+        width: 144px;
+        height: 141px;
+    }
+    #home .button {
+        width: 100%;
+    }
+    #application .application-form {
+        padding: 20px 0 15px 0;
+    }
+    #mobile .img {
+        width: 193%;
+    }
+    #mobile .member {
+        margin-left: 35px;
+    }
+    #bitrix-programs .items-box.third:before,
+    #bitrix-programs .items-box.second:before,
+    #bitrix-programs .items-box:before{
+        width: 60px;
+    }
+    #bitrix-programs .items-box:before {
+        left: 18px;
+    }
+    #bitrix-programs .owl-carousel .owl-nav button.owl-prev {
+        top: 39%;
+        width: 24px;
+    }
+    #bitrix-programs .owl-carousel .owl-nav button.owl-next {
+        top: 39%;
+        width: 24px;
+    }
+    #test .btn-block .box-shadow {
+        width: 100%;
+        bottom: 13px;
+    }
+
 
 }

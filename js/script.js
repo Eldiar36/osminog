@@ -4,7 +4,7 @@ $(document).ready(function(){
         loop:false,
         nav:true,
         dots: false,
-        margin:10,
+        margin:0,
         navText:false,
         animateIn: true,
         autoHeight:true,
