@@ -940,7 +940,7 @@
         top: 0;
     }
     #iframe-video .button1 {
-        padding-left: 110px;
+        padding-left: 70px;
     }
     #iframe-video .iframe-body a {
         margin-top: 38px;
@@ -983,6 +983,9 @@
     #iframe-video .section-subtitle{
         margin: 11px 0 61px 0;
         font-size: 13px;
+    }
+    #integration .question-box .button1 {
+        padding-left: 70px;
     }
     #owner {
         padding: 100px 0 20px 0;
@@ -1474,7 +1477,7 @@
         padding-left: 108px;
     }
     #team .box {
-        height: 120px;
+        height: 140px;
     }
     #stages .owl-carousel .owl-nav button.owl-next {
         width: 34px;
