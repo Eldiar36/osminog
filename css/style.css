@@ -1285,12 +1285,12 @@ header .mobile-menu .mobile-menu-header .social img {
     top: 56%;
 }
 
-#stages .button1.first {
-    margin: 68px auto 30px auto;
-}
 #stages .button1 {
     margin: 28px auto 10px auto;
     text-align: center;
+}
+#stages .button1.first {
+    margin: 70px auto 10px auto;
 }
 #stages .items {
     margin-bottom: 30px;
@@ -2354,6 +2354,7 @@ footer .footer-box .contacts {
 #integration .btn-block .box-shadow{
     bottom: -1px;
 }
+
 
 
 
