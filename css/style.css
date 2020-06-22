@@ -440,43 +440,12 @@ header .mobile-menu .mobile-menu-header .social img {
     border-radius: 70px;
     bottom: 0;
 }
-#tariffs .button.last:after{
-    content: "Рассчитать стоимость";
-    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
-    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
-    border: none;
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 90%;
 
-    height: 100%;
-    border-radius: 70px;
-    bottom: 0;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    color: #00569C;
-    justify-content: center;
-}
 #tariffs .button:after{
-    content: "Купить";
-    background: linear-gradient(179.32deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0px 12.6605px 35.1681px #BBE7FF;
-    border-radius: 70px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    color: #ffffff;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    bottom: -2px;
-    z-index: 9;
+    display: none;
 }
+
+
 .button2{
     text-align: center;
     position: relative;
@@ -552,7 +521,7 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 100%;
 }
 #home .left-box {
-    padding: 112px 0 177px 0;
+    padding: 112px 0 90px 0;
 }
 #home .left-box .section-title {
     text-align: left;
@@ -571,6 +540,13 @@ header .mobile-menu .mobile-menu-header .social img {
     font-weight: 700;
     line-height: 18px;
     color: #000000;
+}
+#home .left-box img {
+    width: 133px;
+    height: 133px;
+}
+#home .left-box .button{
+    margin-top: 0;
 }
 #home .left-box .description span {
     font-weight: normal;
@@ -655,7 +631,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 
 #bitrix-need {
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 #bitrix-need  .section-title{
     text-align: left;
@@ -922,11 +898,14 @@ header .mobile-menu .mobile-menu-header .social img {
 #about-bitrix .box-info {
     position: relative;
     z-index: 2;
-    height: 332px;
+    height: auto;
     width: 360px;
     padding: 37px 30px 33px 30px;
     background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#about-bitrix .box-info.last{
+    padding: 37px 30px 63px 30px ;
 }
 #about-bitrix .box-info h3 {
     margin-bottom: 19px;
@@ -1046,8 +1025,12 @@ header .mobile-menu .mobile-menu-header .social img {
     font-weight: 700;
     margin-bottom: 0;
 }
+#owner .btn-block .box-shadow{
+    bottom: 0;
+    width: 377px;
+}
 #section-7 {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 #section-7 .section-title {
     margin-bottom: 77px;
@@ -1164,7 +1147,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 
 #stages {
-    padding: 80px 0;
+    padding: 0 0 80px 0;
 }
 #stages .stage {
     display: flex;
@@ -1297,6 +1280,17 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #tariffs {
     padding:  0 0 66px 0;
+    position: relative;
+}
+#tariffs:before{
+    content: "";
+    background: url("../images/элемент 1 2.png")no-repeat;
+    background-size: contain;
+    width: 459px;
+    height: 459px;
+    position: absolute;
+    left: 10%;
+    top: 7%;
 }
 #tariffs h2.section-title {
     margin-bottom: 50px;
@@ -1368,6 +1362,44 @@ header .mobile-menu .mobile-menu-header .social img {
 #tariffs .box-wrapper.project .box-footer .button  {
     color: #000000;
     position: relative;
+}
+#tariffs .button.last:after{
+    content: "Рассчитать стоимость";
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
+    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 90%;
+
+    height: 100%;
+    border-radius: 70px;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    color: #00569C;
+    justify-content: center;
+}
+#tariffs .btn-block .box-shadow{
+    content: "Купить";
+    background: none;
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
+    border-radius: 70px;
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    bottom: 15px;
+    z-index: 9;
+    font-size: 17px;
 }
 #support {
     background: linear-gradient(180deg, #6ECAFC -51.3%, #2391EB 100%);
@@ -1453,6 +1485,16 @@ header .mobile-menu .mobile-menu-header .social img {
     height: 74px;
     padding-left: 90px;
 }
+#month-free .btn-block .box-shadow{
+    bottom: -2px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 17px;
+    padding-left: 40px;
+}
 #month-free .right-col p {
     text-align: center;
     font-size: 13px;
@@ -1530,6 +1572,16 @@ header .mobile-menu .mobile-menu-header .social img {
     position: relative;
     padding: 40px 0 0 0;
     background: linear-gradient(180deg, #6ECAFC -51.3%, #2391EB 100%);
+}
+#section-14:before{
+    content: "";
+    background: url("../images/элемент 1 3.png")no-repeat;
+    background-size: contain;
+    width: 389px;
+    height: 389px;
+    position: absolute;
+    left: -14%;
+    top: 8%;
 }
 #section-14 .left-box {
     padding: 51px 0;
@@ -2008,13 +2060,13 @@ footer .footer-box .contacts {
  }
 .white-popup-block:before {
     content: "";
-    width: 354px;
-    height: 354px;
-    background: url(../images/element1.png)no-repeat;
+    width: 275px;
+    height: 220px;
+    background: url("../images/element1.png")no-repeat;
     background-size: contain;
     position: absolute;
     right: 0;
-    top: -1px;
+    top: 0;
     z-index: 0;
 }
 .white-popup-block:after{
@@ -2041,10 +2093,10 @@ footer .footer-box .contacts {
 #sales.white-popup-block:before
 {
     content: "";
-    background: url("../images/element2.png")no-repeat;
+    background: url("../images/element1.2.png")no-repeat;
     background-size: cover;
-    width: 224px;
-    height: 244px;
+    width: 221px;
+    height: 232px;
     position: absolute;
     right: 0;
     top: 0;
@@ -2054,7 +2106,7 @@ footer .footer-box .contacts {
 #complex.white-popup-block:after,
 #sales.white-popup-block:after{
     content: "";
-    background: url(../images/element3.png)no-repeat;
+    background: url("../images/element3.png")no-repeat;
     background-size: contain;
     width: 445px;
     height: 445px;

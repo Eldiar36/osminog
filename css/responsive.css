@@ -243,11 +243,16 @@
     }
     header .license {
         width: 100%;
+        justify-content: center;
     }
     header .license img {
-        width: 140px!important;
-        height: 24px;
-        object-fit: cover;
+        width: 24%!important;
+        height: 28px;
+        object-fit: contain;
+    }
+    header .license img:last-child{
+        object-fit: contain;
+        height: 28px;
     }
     header .header-bottom {
         display: none;
@@ -273,6 +278,12 @@
     #home .left-box .subtitle {
         margin-bottom: 20px;
         font-size: 18px;
+    }
+    .home-row {
+        flex-direction: column-reverse;
+    }
+    #home .right-box:after {
+        right: -39%;
     }
     #bitrix-need .main-box {
         display: flex;
@@ -424,6 +435,10 @@
     #tariffs .box-body p {
         margin-bottom: 5px;
     }
+    #tariffs .btn-block .box-shadow{
+        width: 320px;
+        bottom: 18px;
+    }
     .input1{
         margin-right: 0;
         margin-bottom: 20px;
@@ -518,6 +533,11 @@
     .white-popup-block .section-title{
         font-size: 30px;
         line-height: 35px;
+    }
+    .white-popup-block:before {
+        content: "";
+        width: 191px;
+        height: 160px
     }
     #test .js-main-form {
         margin-top: 35px;
@@ -661,6 +681,12 @@
     #answer .asnwer-content{
         height: 100%!important;
     }
+    #tariffs:before{
+        display: none;
+    }
+    #section-14:before{
+        display: none;
+    }
 
 
 }
@@ -681,8 +707,17 @@
     .container{
         padding: 0 15px;
     }
+    header .mobile-menu .mobile-menu-bottom .license {
+        justify-content: center;
+    }
     header .mobile-menu .mobile-menu-bottom .license img {
-        width: 75px!important;
+        width: 20%!important;
+        object-fit: contain;
+        height: 28px;
+        margin-right: 5px;
+    }
+    header .mobile-menu .mobile-menu-bottom .license img:first-child{
+        width: 30%!important;
         object-fit: contain;
     }
     .btn-block .box-shadow{
@@ -783,6 +818,9 @@
         z-index: 99;
 
     }
+    #home .left-box .button {
+        margin-top: 10px;
+    }
     #home .right-box:before{
         content: "";
         background: url("../images/home-mobile-after.png")no-repeat;
@@ -876,6 +914,7 @@
     #stages{
         padding: 0;
     }
+
     #stages .owl-carousel .owl-nav button.owl-prev{
         width: 34px;
         top: 38%;
@@ -910,6 +949,10 @@
     #stages  .box-shadow{
         width: 90%;
     }
+    #tariffs .btn-block .box-shadow{
+        width: 100%;
+        bottom: 18px;
+    }
     #application {
         padding: 0;
     }
@@ -931,7 +974,6 @@
         height: 74px;
         padding-left: 59px;
     }
-   
     #application .application-box {
         height: 300px;
     }
@@ -1436,7 +1478,7 @@
     }
     #integration .question-box .button1{
         width: 100%;
-        padding-left: 115px;
+        padding-left: 80px;
     }
     #stages .btn-block.first .box-shadow{
         bottom: 0;
@@ -1446,6 +1488,11 @@
         height: 150px;
         right: -44px;
         top: 230px;
+    }
+    #home .left-box img {
+        width: 132px;
+        height: 88px;
+        object-fit: cover;
     }
 
 }
