@@ -174,6 +174,6 @@ jQuery(document).ready(function($) {
 $(function(){
     $( "#accordion" ).accordion({
          collapsible: true,
-        active:1,
+        active: false
     });
 });

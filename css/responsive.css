@@ -644,6 +644,9 @@
     #portfolio .box{
         height: 200px;
     }
+    #answer{
+        margin-top: -25px;
+    }
     #base2 .popup-block {
         margin: 20px 0;
         background: #FFFFFF;
@@ -1275,7 +1278,7 @@
         font-size: 18px;
     }
     #answer {
-        margin-top: -40px;
+        margin-top: -70px;
     }
     #answer .section-title{
         display: none;
@@ -1496,6 +1499,11 @@
     }
 
 }
+@media (max-width: 380px) {
+    #team .box {
+        height: 133px;
+    }
+}
 @media (max-width: 360px) {
         .button1 {
             width: 100%;
@@ -1600,5 +1608,8 @@
         margin: 20px  auto 0 auto;
         width: 100%!important;
         padding-left: 75px;
+    }
+    #answer {
+        margin-top: -100px;
     }
 }
