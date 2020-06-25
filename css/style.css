@@ -49,6 +49,11 @@ main {
 header {
     position: relative;
 }
+header .logo-box img {
+    width: 173px;
+    height: 58px;
+    object-fit: contain;
+}
 header .nav {
     background: #FFFFFF;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -544,9 +549,12 @@ header .mobile-menu .mobile-menu-header .social img {
 #home .left-box img {
     width: 133px;
     height: 133px;
+    position: relative!important;
 }
+
 #home .left-box .button{
     margin-top: 0;
+    position: relative;
 }
 #home .left-box .description span {
     font-weight: normal;
@@ -744,6 +752,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #bitrix-need .main-box img {
     margin-left: -51px;
+    height: 533px;
 }
 #bitrix-need .main-box img.mobile{
     display: none;
@@ -818,7 +827,7 @@ header .mobile-menu .mobile-menu-header .social img {
     line-height: 24px;
     text-align: center;
     color: #000000;
-    margin: 36px 0 38px 0;
+    margin: 30px 0 38px 0;
 }
 .iframe-box {
     position: relative;
@@ -892,7 +901,7 @@ header .mobile-menu .mobile-menu-header .social img {
     background: none;
     color: rgba(88, 184, 247, 0.2);
     z-index: 1;
-    margin-bottom: -123px;
+    margin-bottom: -140px;
 }
 
 #about-bitrix .box-info {
@@ -1112,7 +1121,33 @@ header .mobile-menu .mobile-menu-header .social img {
     height: 74px;
     position: relative;
 }
-#integration .box.two .button {
+#integration .question-box {
+    display: flex;
+    align-items: baseline;
+    margin-top: 50px;
+}
+#integration .question {
+    font-size: 30px;
+    line-height: 35px;
+    color: #AFAFAF;
+    margin-right: 15px;
+    font-weight: 300;
+}
+#integration .question-box .button1 {
+    width: 429px;
+    height: 74px;
+    padding-left: 120px;
+}
+#integration .btn-block{
+    justify-content: flex-end;
+}
+#integration .btn-block.last{
+    justify-content: flex-start;
+}
+#integration .btn-block.last .button{
+    z-index: 99;
+}
+#integration .btn-block.last .button {
     background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 108.82%);
     border: 0.703363px solid #FFFFFF;
     box-sizing: border-box;
@@ -1122,30 +1157,29 @@ header .mobile-menu .mobile-menu-header .social img {
     position: relative;
     z-index: 2;
 }
-#integration .box .button.last:after{
-    width: 90%;
-    height: auto;
+#integration .btn-block.last .box-shadow{
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
+    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
+    border: none;
+    position: absolute;
     left: 0;
-    z-index: 1;
-}
-#integration .question-box {
+    right: 10px;
+    width: 80%;
+    border-radius: 70px;
+    bottom: 0;
     display: flex;
-    align-items: baseline;
-    margin-top: 50px;
-
-}
-#integration .question {
-    font-size: 25px;
-    line-height: 35px;
-    color: #AFAFAF;
-    margin-right: 70px;
-}
-#integration .question-box .button1 {
-    width: 429px;
+    align-items: center;
+    justify-content: center;
     height: 74px;
-    padding-left: 120px;
+    z-index: 0;
 }
-
+#integration .btn-block.last .button:after{
+    display: none;
+}
+#integration .btn-block .box-shadow {
+    bottom: -1px;
+    right: -6%;
+}
 #stages {
     padding: 0 0 80px 0;
 }
@@ -1356,32 +1390,15 @@ header .mobile-menu .mobile-menu-header .social img {
     color: #FFFFFF;
 }
 #tariffs .box-wrapper.project .box-footer .button{
-    background: linear-gradient(179.29deg, #FFFFFF 2.82%, #ADDAFF 108.82%);
+    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
     box-shadow: 0 2.11009px 0  #00569C;
+    z-index: 999;
 }
 #tariffs .box-wrapper.project .box-footer .button  {
     color: #000000;
     position: relative;
 }
-#tariffs .button.last:after{
-    content: "Рассчитать стоимость";
-    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
-    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
-    border: none;
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 90%;
 
-    height: 100%;
-    border-radius: 70px;
-    bottom: 0;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    color: #00569C;
-    justify-content: center;
-}
 #tariffs .btn-block .box-shadow{
     content: "Купить";
     background: none;
@@ -1400,6 +1417,23 @@ header .mobile-menu .mobile-menu-header .social img {
     bottom: 15px;
     z-index: 9;
     font-size: 17px;
+}
+#tariffs .btn-block.last .box-shadow{
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
+    background: linear-gradient(179deg, #FFFFFF 2.82%, #CDE9FF 78.82%);
+    border: none;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    width: 80%;
+    border-radius: 70px;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    z-index: 0;
 }
 #support {
     background: linear-gradient(180deg, #6ECAFC -51.3%, #2391EB 100%);
@@ -1484,23 +1518,26 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 357px;
     height: 74px;
     padding-left: 90px;
+    box-shadow: 0 2.11009px 0 #00569C;
+    z-index: 99;
 }
 #month-free .btn-block .box-shadow{
     bottom: -2px;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-size: 17px;
     padding-left: 40px;
+    box-shadow: 0 12.6605px 35.1681px #BBE7FF;
 }
 #month-free .right-col p {
     text-align: center;
     font-size: 13px;
     line-height: 163.5%;
     color: #8C8C8C;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 #bitrix-programs {
     padding: 70px 0 212px 0;
@@ -1722,6 +1759,12 @@ header .mobile-menu .mobile-menu-header .social img {
     line-height: 24px;
     margin: 16px 0 42px 0;
     color: #000000;
+}
+#reviews .subtitle.mobile{
+    display: none;
+}
+#reviews .subtitle.mobile span{
+    font-weight: 700;
 }
 .iframe-box-wrapper{
     position: relative;

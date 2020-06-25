@@ -272,6 +272,17 @@
     #home .left-box {
         padding: 35px 0 60px 0;
     }
+    #home .left-box .button:before{
+        content: "";
+        background: url("../images/image 8.png")no-repeat;
+        background-size: cover;
+        width: 43px;
+        height: 90px;
+        position: absolute;
+        left: -21px;
+        top: -72px;
+    }
+
     #home .left-box .section-title {
         margin-bottom: 35px;
     }
@@ -355,7 +366,23 @@
     #about-bitrix .box-info {
         height: 100%;
     }
-
+    #integration .question-box .question:before{
+        content: "";
+        background: url("../images/image 8.png")no-repeat;
+        background-size: cover;
+        width: 43px;
+        height: 70px;
+        position: absolute;
+        left: -21px;
+        top: -4px;
+    }
+    #integration .btn-block.last .box-shadow{
+        width: 237px;
+        right: 100%;
+    }
+    #integration .btn-block .box-shadow{
+        right: 100%;
+    }
     #owner .owner-img:after {
         right: 31px;
         top: 33%;
@@ -436,6 +463,10 @@
         margin-bottom: 5px;
     }
     #tariffs .btn-block .box-shadow{
+        width: 320px;
+        bottom: 18px;
+    }
+    #tariffs .btn-block.last .box-shadow{
         width: 320px;
         bottom: 18px;
     }
@@ -766,6 +797,7 @@
     #iframe-video{
         padding: 25px 0;
     }
+
     #bitrix-need .box1 .box,
     #bitrix-need .box2 .box,
     #bitrix-need .box3 .box,
@@ -773,7 +805,7 @@
     #bitrix-need .box5 .box,
     #bitrix-need .box6 .box {
         width: 100%;
-        height: 180px;
+        height: 145px;
         margin-bottom: 30px;
     }
     #bitrix-need .main-box .box h5 {
@@ -785,6 +817,7 @@
     #bitrix-need .main-box img {
         width: 320px;
         margin-left: -19px;
+        height: auto;
     }
     .button {
         width: 100%;
@@ -793,8 +826,12 @@
     .button-owner:before {
         width: 81px;
         height: 67px;
-        left: 7px;
+        left: 15px;
         top: 14px;
+    }
+    #integration .question-box .question:before {
+        left: -24px;
+        top: -6px;
     }
     .button-owner {
         width: 290px;
@@ -1028,10 +1065,26 @@
     #iframe-video .section-subtitle{
         margin: 11px 0 61px 0;
         font-size: 13px;
+        line-height: 15px;
     }
     #integration .question-box .button1 {
         padding-left: 70px;
     }
+    #integration .btn-block.last .box-shadow {
+        left: 0;
+        right: 30%;
+        width: 200px;
+        height: 44px;
+    }
+
+    #integration .question-box .question{
+        width: 88%;
+        margin: 0 auto 20px auto;
+        line-height: 20px;
+        text-align: center;
+        position: relative;
+    }
+
     #owner {
         padding: 100px 0 20px 0;
     }
@@ -1039,6 +1092,7 @@
         display: flex;
         margin: 30px auto 0 auto;
         padding-left: 67px;
+        width: 90%;
     }
     #owner .owner-img {
         background-size: contain;
@@ -1092,6 +1146,17 @@
     }
     #tariffs .box-footer .button{
         width: 100%;
+        height: 62px;
+    }
+    #tariffs .box-footer .btn-block .box-shadow{
+        height: 62px;
+        font-size: 25px;
+    }
+    #tariffs .box-footer .btn-block.last .button{
+        height: 58px;
+    }
+    #tariffs .box-footer .btn-block.last .box-shadow{
+        height: 58px;
     }
     #tariffs .button{
         width: 297px;
@@ -1104,7 +1169,11 @@
         color: #FFFFFF;
         margin-bottom: 15px;
     }
-
+    #tariffs .btn-block.last .box-shadow {
+        width: 289px;
+        bottom: 18px;
+        left: 0;
+    }
     #section-14 {
         padding: 0;
     }
@@ -1190,6 +1259,9 @@
         width: 134px;
         height: 90px;
     }
+    #portfolio .button {
+        display: none;
+    }
     #portfolio .third{
         display: none;
     }
@@ -1198,6 +1270,7 @@
     }
     #portfolio .mobile-portfolio{
         display: block;
+        margin-top: 20px;
     }
 
     #integration{
@@ -1243,12 +1316,21 @@
     #reviews {
         padding: 0;
     }
+    #reviews .subtitle.pc{
+        display: none;
+    }
+    #reviews .subtitle.mobile{
+        display: block;
+        width: 80%;
+        margin:  0 auto 25px auto;
+    }
     #reviews  .iframe-body a img {
         width: 42px;
         margin-top: -40px;
     }
     #reviews .subtitle {
         font-size: 13px;
+        line-height: 15px;
         margin: 15px 0 28px 0;
     }
     #reviews .iframe-box-wrapper:after {
@@ -1257,6 +1339,9 @@
 
     #reviews .iframe-box-wrapper{
         height: 200px;
+    }
+    #team .section-title {
+        margin-bottom: 15px;
     }
     #answer .asnwer-content{
         height: 100%;
@@ -1501,7 +1586,10 @@
 }
 @media (max-width: 380px) {
     #team .box {
-        height: 133px;
+        height: 140px;
+    }
+    #tariffs .btn-block.last .box-shadow {
+        width: 100%;
     }
 }
 @media (max-width: 360px) {
