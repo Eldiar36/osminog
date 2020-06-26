@@ -69,6 +69,17 @@
         width: 100%;
         padding: 109px 0 134px 0;
     }
+    #iframe-video .iframe-box:after {
+        width: 370px;
+        height: 370px;
+        bottom: -40px;
+    }
+    #iframe-video .iframe-box:before {
+        width: 250px;
+        height: 250px;
+        left: -160px;
+        top: -30px;
+    }
     .iframe-body {
         width: 100%;
     }
@@ -90,6 +101,9 @@
     #stages .title.title2{
         font-size: 20px;
     }
+    #owner .btn-block.mobile{
+        display: block;
+    }
     #integration .question {
         font-size: 18px;
     }
@@ -100,6 +114,9 @@
         font-size: 25px;
         line-height: 38px;
         margin-bottom: 8px;
+    }
+    .confidential a {
+        font-size: 16px;
     }
     #tariffs .box-body {
         padding: 20px 0 25px 0;
@@ -629,6 +646,24 @@
         font-size: 17px;
         line-height: 11px;
     }
+    #iframe-video .section-title.pc {
+        display: none;
+    }
+    #iframe-video .section-title.mobile{
+        display: block;
+    }
+    #iframe-video .section-title span {
+        color: #5FBFF9;
+    }
+    .section-title.pc {
+        display: none;
+    }
+    .section-title.mobile{
+        display: block;
+    }
+    #tariffs .tariffs-wrapper{
+        margin: 0 9px;
+    }
 
 }
 @media (max-width: 767px) {
@@ -771,12 +806,12 @@
         font-size: 17px!important;
     }
     .button1 img {
-        width: 80px!important;
-        height: 56px!important;
+        width: 109px !important;
+        height: 74px !important;
         position: absolute;
-        left: 3px;
+        left: 8px;
         background-size: contain;
-        top: 18px;
+        top: 2px;
     }
 
     #home,
@@ -824,10 +859,11 @@
         height: 74px;
     }
     .button-owner:before {
-        width: 81px;
+        width: 91px;
         height: 67px;
-        left: 15px;
-        top: 14px;
+        left: 11px;
+        top: 7px;
+        background-size: cover;
     }
     #integration .question-box .question:before {
         left: -24px;
@@ -997,7 +1033,7 @@
         padding: 0;
     }
     #application .application-form {
-        padding: 20px 25px 15px 25px;
+        padding: 20px 12px 15px 12px;
         border: none;
     }
     #application .application-form .section-title {
@@ -1021,8 +1057,11 @@
         right: -104px;
         top: 0;
     }
+    #application .application-wrapper {
+        background: none;
+    }
     #iframe-video .button1 {
-        padding-left: 70px;
+        padding-left: 110px;
     }
     #iframe-video .iframe-body a {
         margin-top: 38px;
@@ -1073,7 +1112,7 @@
     #integration .btn-block.last .box-shadow {
         left: 0;
         right: 30%;
-        width: 200px;
+        width: 58%;
         height: 44px;
     }
 
@@ -1132,6 +1171,9 @@
     #owner .owner-info-wrapper {
         margin-top: -127px;
     }
+    #owner .btn-block .box-shadow {
+        width: 90%;
+    }
     #section-7 .section-title {
         margin-bottom: 23px;
     }
@@ -1170,7 +1212,7 @@
         margin-bottom: 15px;
     }
     #tariffs .btn-block.last .box-shadow {
-        width: 289px;
+        width: 80%;
         bottom: 18px;
         left: 0;
     }
@@ -1190,6 +1232,7 @@
     }
     #mobile .button2 {
         width: 100%;
+        padding-left: 30px;
     }
     #mobile {
         display: block;
@@ -1564,9 +1607,9 @@
 
         padding-left: 45px;
     }
-    #integration .question-box .button1{
+    #integration .question-box .button1 {
         width: 100%;
-        padding-left: 80px;
+        padding-left: 102px;
     }
     #stages .btn-block.first .box-shadow{
         bottom: 0;
@@ -1583,14 +1626,26 @@
         object-fit: cover;
     }
 
+
 }
 @media (max-width: 380px) {
     #team .box {
         height: 140px;
     }
-    #tariffs .btn-block.last .box-shadow {
+
+    #integration .question-box .button1 {
         width: 100%;
+        padding-left: 120px;
     }
+    .button1 img {
+        width: 88px !important;
+        height: 62px !important;
+        position: absolute;
+        left: 9px;
+        background-size: contain;
+        top: 15px;
+    }
+
 }
 @media (max-width: 360px) {
         .button1 {
@@ -1695,7 +1750,7 @@
     #complex2 .button1{
         margin: 20px  auto 0 auto;
         width: 100%!important;
-        padding-left: 75px;
+        padding-left: 90px;
     }
     #answer {
         margin-top: -100px;

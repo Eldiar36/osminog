@@ -128,6 +128,7 @@ $('.burger-menu_link').on('click',function () {
     $('.burger-menu').removeClass('burger-menu_active');
 
 });
+
 jQuery(document).ready(function($) {
     $('.iframe-youtube').magnificPopup({
         type: 'iframe',
@@ -176,4 +177,42 @@ $(function(){
          collapsible: true,
         active: false
     });
+});
+
+window.onscroll = function showHeader() {
+    let header = document.querySelector(".nav");
+    if (window.pageYOffset > 300) {
+        header.classList.add("header-fixed")
+    }
+    else  {
+        header.classList.remove("header-fixed")
+    }
+};
+jQuery(window).scroll(function(){
+    var $sections = $('section');
+    $sections.each(function(i,el){
+        var top  = $(el).offset().top-100;
+        var bottom = top +$(el).height();
+        var scroll = $(window).scrollTop();
+        var id = $(el).attr('id');
+        if( scroll > top && scroll < bottom){
+            $('a.active').removeClass('active');
+            $('a[href="#'+id+'"]').addClass('active');
+
+        }
+    })
+});
+
+$("nav").on("click","a", function (event) {
+    // исключаем стандартную реакцию браузера
+    event.preventDefault();
+
+    // получем идентификатор блока из атрибута href
+    var id  = $(this).attr('href'),
+
+        // находим высоту, на которой расположен блок
+        top = $(id).offset().top;
+
+    // анимируем переход к блоку, время: 800 мс
+    $('body,html').animate({scrollTop: top}, 0);
 });

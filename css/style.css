@@ -62,11 +62,10 @@ header .nav {
 header .nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 0 17px 0;
 }
-header .nav ul li {
-    margin-right: 105px;
-}
+
 header .nav ul li:last-child{
     margin-right: 0;
 }
@@ -77,10 +76,7 @@ header .nav ul li a {
     text-align: center;
     color: #000000;
 }
-header .nav ul li a.blue {
-    text-decoration-line: underline;
-    color: #2391EB;
-}
+
 header .header-bottom {
     margin-top: 15px;
 }
@@ -170,7 +166,35 @@ header .header-bottom .phone .phone-info span {
     line-height: 18px;
     color: #919191;
 }
-
+header.header-fixed .header-bottom .phone:after{
+    display: none;
+}
+header.header-fixed .nav {
+    margin: 0;
+    box-shadow: none;
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    opacity: 1;
+    animation-name: show-header;
+    animation-duration: 1s;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    padding: 5px 0 5px 0;
+}
+.mobile-menu-header.header-fixed{
+    padding:15px;
+}
+.mobile-menu-header.header-fixed .burger-menu_button{
+    top: -8px;
+}
+.nav-items.active{
+    color: #2391EB;
+}
 /*burger menu start*/
 .mobile-menu {
     display: none;
@@ -339,6 +363,9 @@ header .mobile-menu .mobile-menu-header .social img {
     text-align: center;
     color: #000000;
 }
+.section-title.mobile{
+    display: none;
+}
 .button1 {
     position: relative;
     width: 357px;
@@ -347,7 +374,7 @@ header .mobile-menu .mobile-menu-header .social img {
     align-items: center;
     justify-content: center;
     background: linear-gradient(179.3deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0 2.11009px 4px #00569C;
+    box-shadow: 0 2.11009px 0 #00569C;
     border-radius: 70.3363px;
     border: none;
     color: #ffffff;
@@ -761,6 +788,10 @@ header .mobile-menu .mobile-menu-header .social img {
 #application {
     padding: 40px 0;
 }
+#application .application-wrapper {
+    background: linear-gradient(180deg, #6ECAFC 0%, #2391EB 100%);
+    padding: 11px;
+}
 #application .application-box{
     background: url("../images/Group 869 (2).png")no-repeat left;
     background-size: contain;
@@ -783,7 +814,7 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #application .application-form {
     padding: 55px 40px 44px 40px;
-    border: 5px solid  #2391EB;
+    background: #ffffff;
     width: 100%;
 
 }
@@ -813,14 +844,20 @@ header .mobile-menu .mobile-menu-header .social img {
 }
 #application .button1 {
     width: 100%;
+    z-index: 99;
 }
-
+#application .btn-block .box-shadow {
+    z-index: 1;
+}
 
 #iframe-video {
     padding: 40px 0;
 }
 #iframe-video .section-title span{
     color: #2391EB;
+}
+#iframe-video .section-title.mobile{
+    display: none;
 }
 #iframe-video .section-subtitle{
     font-size: 20px;
@@ -860,6 +897,7 @@ header .mobile-menu .mobile-menu-header .social img {
     position: absolute;
     bottom: -80px;
     right: -36%;
+    z-index: -1;
 }
  .iframe-body {
     background: url("../images/COLORED HOR SRC 1.png")no-repeat center;
@@ -1038,6 +1076,9 @@ header .mobile-menu .mobile-menu-header .social img {
     bottom: 0;
     width: 377px;
 }
+#owner .btn-block.mobile{
+    display: none;
+}
 #section-7 {
     padding: 100px 0 0 0;
 }
@@ -1163,8 +1204,8 @@ header .mobile-menu .mobile-menu-header .social img {
     border: none;
     position: absolute;
     left: 0;
-    right: 10px;
-    width: 80%;
+    right: 23%;
+    width: 57%;
     border-radius: 70px;
     bottom: 0;
     display: flex;
@@ -1329,6 +1370,7 @@ header .mobile-menu .mobile-menu-header .social img {
 #tariffs h2.section-title {
     margin-bottom: 50px;
 }
+
 #tariffs .box-wrapper {
     background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -2202,7 +2244,7 @@ footer .footer-box .contacts {
     width: 338px;
     height: 74px;
 }
-#test .confidential a {
+ .confidential a {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
@@ -2235,7 +2277,21 @@ footer .footer-box .contacts {
     position: relative;
     text-align: center;
 }
-
+#application .confidential {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#application .confidential input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+#application .confidential a {
+    margin: 0;
+}
 #base2 .section-title,
 #complex2 .section-title {
     color:  #2391EB;;
