@@ -178,13 +178,16 @@ header.header-fixed .nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 1001;
     opacity: 1;
     animation-name: show-header;
     animation-duration: 1s;
     background: #ffffff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     padding: 5px 0 5px 0;
+}
+.header-fixed header nav{
+    margin: 0;
 }
 .mobile-menu-header.header-fixed{
     padding:15px;
@@ -509,7 +512,7 @@ header .mobile-menu .mobile-menu-header .social img {
 .button-owner {
     position: relative;
     background: linear-gradient(179.45deg, #6ECAFC 2.82%, #2391EB 108.82%);
-    box-shadow: 0 2.11009px 4px #00569C;
+    box-shadow: 0 2.11009px 0 #00569C;
     border-radius: 70.3363px;
     width: 429px;
     height: 74px;
@@ -521,6 +524,7 @@ header .mobile-menu .mobile-menu-header .social img {
     padding-left: 60px;
     color: #ffffff;
     text-align: center;
+
 }
 .button-owner:before{
     content: "";
@@ -1763,7 +1767,7 @@ header .mobile-menu .mobile-menu-header .social img {
     width: 276px;
     height: 276px;
     position: absolute;
-    top: -47px;
+    top: -60px;
     right: -102px;
 }
 #portfolio .mobile-portfolio{
@@ -2143,7 +2147,10 @@ footer .footer-box .contacts {
      right: -9%;
      top: 0;
  }
-.white-popup-block:before {
+  #test .js-main-form{
+      overflow: hidden;
+  }
+.white-popup-block .js-main-form:before {
     content: "";
     width: 275px;
     height: 220px;
@@ -2154,7 +2161,7 @@ footer .footer-box .contacts {
     top: 0;
     z-index: 0;
 }
-.white-popup-block:after{
+.white-popup-block .js-main-form:after{
     content: "";
     background: url("../images/element3.png")no-repeat;
     background-size: contain;
@@ -2505,6 +2512,27 @@ footer .footer-box .contacts {
 #integration .btn-block .box-shadow{
     bottom: -1px;
 }
+
+#portfolio {
+    padding-top: 95px;
+    margin-top: -45px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box
+}
+#tariffs {
+    padding-top: 95px;
+    margin-top: -65px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box
+}
+
+#stages {
+    padding-top: 95px;
+    margin-top: -45px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box
+}
+
 
 
 

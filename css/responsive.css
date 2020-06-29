@@ -255,6 +255,21 @@
     #about-bitrix {
         padding: 30px 0;
     }
+    #portfolio{
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    #tariffs {
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    #stages{
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    #integration .btn-block {
+        justify-content: flex-start;
+    }
     header .nav {
         display: none;
     }
@@ -536,10 +551,10 @@
         margin-bottom: 20px;
     }
     #bitrix-programs .owl-carousel .owl-nav button.owl-next {
-        right: 0;
+        right: -10%;
     }
     #bitrix-programs .owl-carousel .owl-nav button.owl-prev {
-        left: 0;
+        left: -10%;
     }
     #bitrix-programs .section-title {
         margin-bottom: 50px;
@@ -756,8 +771,22 @@
     #section-14:before{
         display: none;
     }
-
-
+    #bitrix-programs .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
+    #bitrix-programs .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+    #stages .owl-carousel .owl-nav button.owl-next {
+        width: 45px;
+        right: -2%;
+        top: 33%;
+    }
+    #stages .owl-carousel .owl-nav button.owl-prev {
+        width: 45px;
+        left: -2%;
+        top: 33%;
+    }
 }
 @media (max-width: 500px) {
     #team .box {
@@ -871,6 +900,7 @@
     }
     .button-owner {
         width: 290px;
+        overflow: hidden;
     }
     .button-owner a {
         margin-left: 50px;
