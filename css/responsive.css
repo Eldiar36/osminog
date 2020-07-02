@@ -679,6 +679,11 @@
     #tariffs .tariffs-wrapper{
         margin: 0 9px;
     }
+    .white-popup-block .js-main-form:before {
+        content: "";
+        width: 150px;
+        height: 120px;
+    }
 
 }
 @media (max-width: 767px) {
@@ -1001,7 +1006,7 @@
     #bitrix-need .main-box img.mobile{
         display: flex;
         order: 2;
-        width: 298px;
+        width: 90%;
         margin-left: -19px;
     }
     #about-bitrix .box-number {
@@ -1081,14 +1086,19 @@
         padding-left: 59px;
     }
     #application .application-box {
-        height: 300px;
+        height: 327px;
+        background: url("../images/mobile-application.png")no-repeat left;
+        background-size: cover;
     }
     #application .application-box .img {
-        right: -104px;
-        top: 0;
+       display: none;
     }
     #application .application-wrapper {
         background: none;
+        padding: 0 11px;
+    }
+    #application .application-wrapper .application-form {
+        padding: 0 12px 15px 12px;
     }
     #iframe-video .button1 {
         padding-left: 110px;
@@ -1674,6 +1684,10 @@
         left: 9px;
         background-size: contain;
         top: 15px;
+    }
+    #application .application-box {
+        background-size: contain;
+        height: 230px;
     }
 
 }
