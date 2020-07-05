@@ -1830,7 +1830,7 @@
         margin-top: -100px;
     }
 }
-@media (max-height: 800px) {
+@media (max-height: 700px) {
     .burger-menu_nav{
         padding: 10% 0 20px 10%;
     }
