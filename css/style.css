@@ -323,7 +323,7 @@ header .mobile-menu .mobile-menu-header .social img {
     left: 0;
     right: 0;
     margin: auto;
-    top: 92%;
+    bottom: 20px;
     cursor: pointer;
     text-align: center;
     color: #FFFFFF;
@@ -352,7 +352,7 @@ header .mobile-menu .mobile-menu-header .social img {
     background: url("../images/Mask Group.png")no-repeat;
     background-size: contain;
     position: absolute;
-    top: 80%;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin:  auto;
