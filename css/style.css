@@ -802,15 +802,66 @@ header .mobile-menu .mobile-menu-header .social img {
     height: 638px;
     position: relative;
 }
-#application .application-box .img {
-    background: url("../images/image 42 (1).png")no-repeat right;
-    background-size: contain;
+.checkbox-wrap {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.checkbox {
+    display: inline-block;
+    opacity: 0;
+    width: 24px;
+    top: 0;
+    height: 24px;
+    margin: 0 10px 0 0;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+.checkbox ~ .checkbox-toggle {
+    display: inline-block;
     position: absolute;
-    right: -190px;
-    top: -19px;
-    height: 100%;
-    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000000;
+}
+.checkbox ~ .checkbox-toggle:before, .checkbox ~ .checkbox-toggle:after {
+    position: absolute;
+    top: 12px;
+    height: 2px;
+    background: #000000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    content: '';
+    opacity: 0;
+}
 
+.checkbox:checked ~ .checkbox-toggle:before {
+    top: 7px;
+    left: 2px;
+    opacity: 1;
+}
+.checkbox:checked ~ .checkbox-toggle:after {
+    opacity: 1;
+    left: 3px;
+    top: 6px;
+}
+.checkbox ~ .checkbox-toggle:after {
+    width: 11px;
+    right: 2px;
+    top: 11px;
+    transform: rotate(-50deg);
+}
+.checkbox ~ .checkbox-toggle:before {
+    width: 5px;
+    left: 4px;
+    transform: rotate(50deg);
 }
 #application .application-box img {
     text-align: right;
@@ -820,7 +871,6 @@ header .mobile-menu .mobile-menu-header .social img {
     padding: 55px 40px 44px 40px;
     background: #ffffff;
     width: 100%;
-
 }
 #application .application-form .section-title {
     text-align: left;
@@ -2049,6 +2099,9 @@ footer .footer-box {
     flex-wrap: wrap;
     align-items: center;
 }
+footer .footer-box .logo {
+    text-align: center;
+}
 footer .footer-box .logo img {
     width: 187px;
     height: 63px;
@@ -2291,10 +2344,10 @@ footer .footer-box .contacts {
     margin-top: 25px;
 }
 #application .confidential input {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     margin-bottom: 0;
-    margin-right: 12px;
+    margin-right: 0;
 }
 #application .confidential a {
     margin: 0;

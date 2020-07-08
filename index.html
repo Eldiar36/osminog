@@ -196,7 +196,6 @@
              <div class="row justify-content-center">
                      <div class="main-box">
                          <img class="pc" src="images/img4.png" alt="">
-                         <img src="images/mobile-need.png" class="mobile" alt="">
                          <div class="box1">
                              <div class="box ">
                                  <h5>Плохие продажи</h5>
@@ -247,9 +246,8 @@
     <section id="application">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-12">
                     <div class="application-box">
-                        <div class="img"></div>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -271,8 +269,12 @@
                                 <div class="box-shadow"></div>
                             </div>
                             <label class="confidential d-flex">
-                                <input type="checkbox" name="confidential" checked
-                                >
+                                <div class="checkbox-wrap d-flex align-items-center">
+                                    <input type="checkbox" id="check1" class="checkbox" checked>
+                                    <span class="checkbox-toggle">
+
+                                            </span>
+                                </div>
                                 <a href="" target="_blank">Политика конфеденицальности</a>
                             </label>
 
@@ -1075,11 +1077,11 @@
                                 <p>- первоначальная настройка до 10 чел. цена 7800 рублей
                                 </p>
                                 <p>- запуск блока "Задачи и проекты" до 10 чел. цена 7800 рублей</p>
-                                <p>-запуск блока "Коммуникации" до 10 чел. цена 9500 рублей </p>
-                                <p>-втоматизация внутреннего процесса. цена 12800</p>
-                                <p>-aвтоматизация внутреннего процесса. цена 12800</p>
-                                <p>-запуск блока "CRM Базовый" до 10 человек. цена 19800</p>
-                                <p>-подготовка к работе с нашим Бизнес-Аналитиком</p>
+                                <p>- запуск блока "Коммуникации" до 10 чел. цена 9500 рублей </p>
+                                <p>- автоматизация внутреннего процесса. цена 12800</p>
+                                <p>- aвтоматизация внутреннего процесса. цена 12800</p>
+                                <p>- запуск блока "CRM Базовый" до 10 человек. цена 19800</p>
+                                <p>- подготовка к работе с нашим Бизнес-Аналитиком</p>
 
                             </div>
                             <div class="box-footer">
@@ -1105,9 +1107,9 @@
                                 <p>- первоначальная настройка до 10 чел. цена 7800 рублей
                                 </p>
                                 <p>- запуск блока "Коммуникации" до 10 чел. цена 9500 рублей</p>
-                                <p>-запуск блока "CRM Базовый" до 10 человек. цена 19800</p>
+                                <p>- запуск блока "CRM Базовый" до 10 человек. цена 19800</p>
                                 <p>- запуск блока "CRM Продвинутый" цена 49800</p>
-                                <p>-подготовка к работе с нашим Бизнес-Аналитиком</p>
+                                <p>- подготовка к работе с нашим Бизнес-Аналитиком</p>
 
                             </div>
                             <div class="box-footer">
@@ -1136,8 +1138,8 @@
                                 <p>- аудит бизнес процессов
                                 </p>
                                 <p>- оптимизация процессов</p>
-                                <p>-написание ТЗ</p>
-                                <p>-ценка по тех. заданию</p>
+                                <p>- написание ТЗ</p>
+                                <p>- оценка по тех. заданию</p>
 
                             </div>
                             <div class="box-footer">
@@ -2038,7 +2040,7 @@
                        <div class="col-lg-2"></div>
                        <div class="col-lg-5">
                            <div class="btn-block">
-                               <a class="button1" href="#">
+                               <a class="button1 popup-with-form" href="#zayavka">
                                    <img src="images/image%205.png" alt="">
                                    Оставить заявку</a>
                                <div class="box-shadow"></div>
@@ -2095,7 +2097,7 @@
                 </div>
             </div>
             <div class="btn-block"> 
-                <a class="button1" href="#">
+                <a class="button1 popup-with-form" href="#test">
                     <img src="images/image%205.png" alt="">
                     Рассчитать стоимость <br>
                     проектного внедрения
@@ -2138,6 +2140,11 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+    {
+        if (screen.width > 991) document.write ('<script type="text/javascript" src="js/header-fixed.js" ></sc' + 'ript>');
+    }
+</script>
 
 </body>
 </html>

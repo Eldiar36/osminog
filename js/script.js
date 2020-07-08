@@ -140,7 +140,7 @@ $('.image-popup-zoom').magnificPopup({
     type: 'image',
     zoom: {
         enabled: true,
-        duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+        duration: 300 //
     }
 });
 
@@ -151,15 +151,6 @@ jQuery(document).ready(function($) {
 
     });
 });
-window.onscroll = function showHeader() {
-    let header =    document.querySelector(".header");
-    if (window.pageYOffset > 200) {
-        header.classList.add("header-fixed")
-    }
-    else  {
-        header.classList.remove("header-fixed")
-    }
-}
 
 jQuery(document).ready(function($) {
     $('.popup-block2').magnificPopup({
@@ -179,15 +170,6 @@ $(function(){
     });
 });
 
-window.onscroll = function showHeader() {
-    let header = document.querySelector(".nav");
-    if (window.pageYOffset > 300) {
-        header.classList.add("header-fixed")
-    }
-    else  {
-        header.classList.remove("header-fixed")
-    }
-};
 jQuery(window).scroll(function(){
     var $sections = $('section');
     $sections.each(function(i,el){
