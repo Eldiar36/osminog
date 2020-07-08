@@ -1125,7 +1125,7 @@
         padding: 0 12px 15px 12px;
     }
     #iframe-video .button1 {
-        padding-left: 110px;
+        padding-left: 90px;
     }
     #iframe-video .iframe-body a {
         margin-top: 38px;
@@ -1762,6 +1762,9 @@
         width: 34px;
         top: 35%;
         right: -4%;
+    }
+    #iframe-video .button1 {
+        padding-left: 115px;
     }
     #stages .owl-carousel .owl-nav button.owl-prev {
         width: 34px;
